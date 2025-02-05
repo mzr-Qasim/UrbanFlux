@@ -1,0 +1,104 @@
+$uni-color-1: #000000;
+$uni-color-2: #ffffff;
+
+
+
+body{
+    overflow: hidden;
+    overflow-y: auto;
+    font-family: 'ATC Arquette';
+}
+
+
+h1, h2, h3, h4, p, ul, li, figure{
+    margin: 0;
+    padding: 0;
+}
+
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container-custom{
+    max-width: 1800px;
+    margin: auto;
+}
+
+.d_flex{
+    display: flex;
+}
+
+.space-bet{
+    display: flex;
+    justify-content: space-between;
+}
+
+.align-center{
+    display: flex;
+    align-items: center;
+}
+
+.theme-button{
+    background-color: $uni-color-1;
+    color: $uni-color-2;
+    padding: 1rem 1.5rem;
+}
+
+.theme-button-link{
+    background-color: $uni-color-1;
+    color: $uni-color-2;
+    padding: 1rem 1.5rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.link-arrow{
+    margin-left: 1rem;
+    font-size: .7rem;
+}
+
+.swiper-nav-white{
+    color: $uni-color-2;
+}
+
+
+.swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 10px));
+    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 10px));
+    background: $uni-color-2;
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+
+}
+
+.swiper-pagination-bullet-active {
+    background: $uni-color-1;
+
+}
+
+.swiper-button-next:after{
+    margin-right: 3rem;
+    content: "\e907";
+    font-family: 'icomoon';
+    font-size: var(--swiper-navigation-size);
+    text-transform: none !important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+}
+
+.swiper-button-prev:after{
+    margin-left: 3rem;
+    content: "\e907";
+    rotate: 180deg;
+    font-family: 'icomoon';
+    font-size: var(--swiper-navigation-size);
+    text-transform: none !important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+}

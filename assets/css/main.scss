@@ -1,0 +1,115 @@
+@import './partials/fonts';
+@import './vendors/bs-x5/bootstrap';
+@import './partials/base';
+
+
+
+.main-navbar{
+    padding: 1rem 0;
+    background-color: $uni-color-2;
+    .navbar-brand{
+        img{
+            width: 180px;
+        }
+    }
+}
+
+
+.navbar-nav{
+    justify-content: center;
+    flex: 1;
+
+    li{
+        &:not(:last-child){
+            margin-right: 2rem;
+        }
+    }
+}
+
+.nav-right-links{
+    li{
+        &:not(:last-child){
+            margin-right: 1.5rem;
+        }
+        a{
+            color: $uni-color-1;
+
+            i{
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+
+.main-hero-section{
+    .swiper-slide{
+        figure{
+            width: 100%;
+            height: 850px;
+            aspect-ratio: 1/1;
+            position: relative;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            figcaption{
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 100%;
+                transform: translate(0, 0);
+                z-index: 2;
+
+                .figcaption-inner{
+                    color: $uni-color-2;
+
+                    h2{
+                        font-size: calc(4rem + .2vw);
+                        font-weight: normal;
+                        margin-bottom: 2rem;
+                    }
+                    small{
+                        display: block;
+                        font-size: calc(1.2rem + .2vw);
+                        font-weight: 300;
+                        margin-bottom: 3rem;
+                    }
+                }
+            }
+
+            &::after{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: $uni-color-1;
+                opacity: .4;
+                z-index: 1;
+            }
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import './partials/mediaqueries';
