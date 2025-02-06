@@ -12328,8 +12328,8 @@ a {
     width: 150px;
   }
   .main-hero-section .swiper-slide figure img {
-    -o-object-position: right top;
-       object-position: right top;
+    -o-object-position: center top;
+       object-position: center top;
   }
   .categories-section .row [class^=col-]:not(:last-child) {
     padding-bottom: 2rem;
