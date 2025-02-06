@@ -50,9 +50,16 @@ a{
 
 
 .theme-button{
-    background-color: $uni-color-1;
-    color: $uni-color-2;
+    background-color: $uni-color-2;
+    color: $uni-color-1;
     padding: 1rem 1.5rem;
+    transition: ease-in-out .5s;
+
+
+    &:hover{
+        background-color: $uni-color-1;
+        color: $uni-color-2;
+    }
 }
 
 .theme-button-link{
@@ -61,6 +68,12 @@ a{
     padding: 1rem 1.5rem;
     display: inline-flex;
     align-items: center;
+    transition: ease-in-out .5s;
+
+    &:hover{
+        background-color: $uni-color-1;
+        color: $uni-color-2;
+    }
 }
 
 .link-arrow{
