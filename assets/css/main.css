@@ -12252,6 +12252,9 @@ a {
   z-index: 40;
 }
 
+.categories-section {
+  margin-bottom: 4rem;
+}
 .categories-section .col-inner {
   height: 100%;
   display: flex;
