@@ -12144,29 +12144,6 @@ a {
   background: #000000;
 }
 
-.swiper-button-next:after {
-  margin-right: 3rem;
-  content: "\e907";
-  font-family: "icomoon";
-  font-size: var(--swiper-navigation-size);
-  text-transform: none !important;
-  letter-spacing: 0;
-  font-variant: initial;
-  line-height: 1;
-}
-
-.swiper-button-prev:after {
-  margin-left: 3rem;
-  content: "\e907";
-  rotate: 180deg;
-  font-family: "icomoon";
-  font-size: var(--swiper-navigation-size);
-  text-transform: none !important;
-  letter-spacing: 0;
-  font-variant: initial;
-  line-height: 1;
-}
-
 .main-navbar {
   padding: 1rem 0;
   background-color: #ffffff;
@@ -12195,26 +12172,24 @@ a {
 
 .main-hero-section .swiper-slide figure {
   width: 100%;
-  height: 850px;
-  aspect-ratio: 1/1;
+  height: 800px;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 .main-hero-section .swiper-slide figure img {
+  position: absolute;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .main-hero-section .swiper-slide figure figcaption {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  transform: translate(0, 0);
   z-index: 2;
+  width: 100%;
 }
 .main-hero-section .swiper-slide figure figcaption .figcaption-inner {
-  color: #ffffff;
+  color: #000000;
 }
 .main-hero-section .swiper-slide figure figcaption .figcaption-inner h2, .main-hero-section .swiper-slide figure figcaption .figcaption-inner .h2 {
   font-size: calc(4rem + 0.2vw);
@@ -12234,7 +12209,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000000;
-  opacity: 0.4;
+  background-color: #ffffff;
+  opacity: 0.2;
   z-index: 1;
 }/*# sourceMappingURL=main.css.map */
