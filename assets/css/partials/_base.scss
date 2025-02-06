@@ -54,6 +54,8 @@ a{
     color: $uni-color-1;
     padding: 1rem 1.5rem;
     transition: ease-in-out .5s;
+    font-size: calc(1rem + .2vw);
+    font-weight: normal;
 
 
     &:hover{
@@ -69,6 +71,8 @@ a{
     display: inline-flex;
     align-items: center;
     transition: ease-in-out .5s;
+    font-size: calc(1rem + .2vw);
+    font-weight: normal;
 
     &:hover{
         background-color: $uni-color-1;
@@ -82,7 +86,10 @@ a{
 }
 
 .swiper-nav-black{
-    color: $uni-color-1;
+    color: $uni-color-2;
+
+
+
 }
 
 
@@ -90,26 +97,32 @@ a{
     width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 10px));
     height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 10px));
     background: $uni-color-2;
-    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    opacity: var(--swiper-pagination-bullet-opacity, .5);
 
 }
 
 .swiper-pagination-bullet-active {
-    background: $uni-color-1;
+    background: $uni-color-2;
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
 
 }
+
+
 
 .swiper-button-next:after{
     margin-right: 3rem;
     content: "\e907";
     font-family: 'icomoon';
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-transform: none !important;
     letter-spacing: 0;
     font-variant: initial;
     line-height: 1;
     background-color:$uni-color-2;
     padding: .3rem .5rem;
+    background: $uni-color-2;
+    color: $uni-color-1;
+
 }
 
 .swiper-button-prev:after{
@@ -117,11 +130,12 @@ a{
     content: "\e907";
     rotate: 180deg;
     font-family: 'icomoon';
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-transform: none !important;
     letter-spacing: 0;
     font-variant: initial;
     line-height: 1;
     background-color:$uni-color-2;
+    color: $uni-color-1;
     padding: .3rem .5rem;
 }
