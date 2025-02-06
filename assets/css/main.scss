@@ -183,16 +183,20 @@
 
     .sale-section-inner {
         .sale-section-content{
-            strong{
+            padding: 3rem 0;
+            color: $uni-color-1;
+            small.sale{
+                font-weight: 500;
                 margin-bottom: 2rem;
             }
             h3{
-                font-size: calc(3rem + .2vw);
-                font-weight: normal;
                 margin-bottom: 2rem;
             }
             small{
                 margin-bottom: 2rem;
+            }
+            a{
+                max-width: 200px;
             }
         }
         .col-inner{

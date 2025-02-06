@@ -12105,6 +12105,18 @@ a {
   align-items: center;
 }
 
+.small-font {
+  display: block;
+  font-size: calc(1rem + 0.2vw);
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+
+.main-heading-font {
+  font-size: calc(3rem + 0.2vw);
+  font-weight: normal;
+}
+
 .theme-button {
   background-color: #ffffff;
   color: #000000;
@@ -12119,13 +12131,28 @@ a {
 }
 
 .theme-button-black {
-  display: inline-flex !important;
+  position: relative;
   background-color: #000000;
   color: #ffffff;
   padding: 1rem 1.5rem;
-  transition: ease-in-out 0.5s;
   font-size: calc(1rem + 0.2vw);
   font-weight: normal;
+  overflow: hidden;
+}
+.theme-button-black:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  transition: ease-in-out 0.5s;
+  background-color: #ffffff;
+  opacity: 0.5;
+  transform: translateX(100%);
+}
+.theme-button-black:hover:after {
+  transform: translateX(0);
 }
 
 .theme-button-link {
@@ -12331,16 +12358,22 @@ a {
 .sale-section {
   margin-bottom: 2rem;
 }
-.sale-section .sale-section-inner .sale-section-content strong {
+.sale-section .sale-section-inner .sale-section-content {
+  padding: 3rem 0;
+  color: #000000;
+}
+.sale-section .sale-section-inner .sale-section-content small.sale, .sale-section .sale-section-inner .sale-section-content .sale.small {
+  font-weight: 500;
   margin-bottom: 2rem;
 }
 .sale-section .sale-section-inner .sale-section-content h3, .sale-section .sale-section-inner .sale-section-content .h3 {
-  font-size: calc(3rem + 0.2vw);
-  font-weight: normal;
   margin-bottom: 2rem;
 }
 .sale-section .sale-section-inner .sale-section-content small, .sale-section .sale-section-inner .sale-section-content .small {
   margin-bottom: 2rem;
+}
+.sale-section .sale-section-inner .sale-section-content a {
+  max-width: 200px;
 }
 .sale-section .sale-section-inner .col-inner {
   height: 100%;
@@ -12381,15 +12414,5 @@ a {
 @media (max-width: 767px) {
   .main-hero-font {
     font-size: calc(2.7rem + 0.2vw) !important;
-  }
-  .sale-section .sale-section-inner {
-    flex-direction: column-reverse;
-  }
-  .sale-section .sale-section-inner .left-section {
-    width: 100%;
-  }
-  .sale-section .sale-section-inner .right-section {
-    width: 100%;
-    margin-bottom: 2rem;
   }
 }/*# sourceMappingURL=main.css.map */
