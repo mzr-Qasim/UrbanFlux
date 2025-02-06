@@ -3,6 +3,10 @@ $uni-color-2: #ffffff;
 
 
 
+$section-space: 4rem;
+
+
+
 body{
     overflow: hidden;
     overflow-y: auto;
@@ -29,6 +33,7 @@ a{
     margin: auto;
 }
 
+
 .d_flex{
     display: flex;
 }
@@ -43,6 +48,7 @@ a{
     align-items: center;
 }
 
+
 .theme-button{
     background-color: $uni-color-1;
     color: $uni-color-2;
@@ -50,8 +56,8 @@ a{
 }
 
 .theme-button-link{
-    background-color: $uni-color-1;
-    color: $uni-color-2;
+    background-color: $uni-color-2;
+    color: $uni-color-1;
     padding: 1rem 1.5rem;
     display: inline-flex;
     align-items: center;
@@ -62,8 +68,8 @@ a{
     font-size: .7rem;
 }
 
-.swiper-nav-white{
-    color: $uni-color-2;
+.swiper-nav-black{
+    color: $uni-color-1;
 }
 
 
@@ -80,25 +86,29 @@ a{
 
 }
 
-// .swiper-button-next:after{
-//     margin-right: 3rem;
-//     content: "\e907";
-//     font-family: 'icomoon';
-//     font-size: var(--swiper-navigation-size);
-//     text-transform: none !important;
-//     letter-spacing: 0;
-//     font-variant: initial;
-//     line-height: 1;
-// }
+.swiper-button-next:after{
+    margin-right: 3rem;
+    content: "\e907";
+    font-family: 'icomoon';
+    font-size: 1.5rem;
+    text-transform: none !important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+    background-color:$uni-color-2;
+    padding: .3rem .5rem;
+}
 
-// .swiper-button-prev:after{
-//     margin-left: 3rem;
-//     content: "\e907";
-//     rotate: 180deg;
-//     font-family: 'icomoon';
-//     font-size: var(--swiper-navigation-size);
-//     text-transform: none !important;
-//     letter-spacing: 0;
-//     font-variant: initial;
-//     line-height: 1;
-// }
+.swiper-button-prev:after{
+    margin-left: 3rem;
+    content: "\e907";
+    rotate: 180deg;
+    font-family: 'icomoon';
+    font-size: 1.5rem;
+    text-transform: none !important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+    background-color:$uni-color-2;
+    padding: .3rem .5rem;
+}
