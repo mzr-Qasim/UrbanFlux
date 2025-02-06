@@ -3,7 +3,8 @@ $uni-color-2: #ffffff;
 
 
 
-$section-space: 4rem;
+$section-space: 2rem;
+$section-space-large: 6rem;
 
 
 
@@ -28,10 +29,6 @@ a{
     text-decoration: none;
 }
 
-.container-custom{
-    max-width: 1800px;
-    margin: auto;
-}
 
 
 .d_flex{
@@ -62,6 +59,22 @@ a{
         background-color: $uni-color-1;
         color: $uni-color-2;
     }
+}
+
+.theme-button-black{
+    display: inline-flex!important;
+    background-color: $uni-color-1;
+    color: $uni-color-2;
+    padding: 1rem 1.5rem;
+    transition: ease-in-out .5s;
+    font-size: calc(1rem + .2vw);
+    font-weight: normal;
+
+
+    // &:hover{
+    //     background-color: $uni-color-1;
+    //     color: $uni-color-2;
+    // }
 }
 
 .theme-button-link{
