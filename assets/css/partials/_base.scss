@@ -2,6 +2,9 @@ $uni-color-1: #000000;
 $uni-color-2: #ffffff;
 
 
+$sale-badge-color: #fc5732;
+
+
 
 $section-space: 2rem;
 $section-space-large: 6rem;
@@ -44,6 +47,8 @@ a{
     display: flex;
     align-items: center;
 }
+
+
 
 .small-font {
     display: block;
@@ -231,5 +236,50 @@ a{
     &:hover{
         background-color: $uni-color-1;
         color: $uni-color-2;
+    }
+}
+
+.product-carousel-shop-button{
+    background-color: $uni-color-2;
+    color: $uni-color-1;
+    padding: .5rem .8rem;
+    display: inline-flex;
+    align-items: center;
+    transition: ease-in-out .5s;
+    font-size: calc(.7rem + .2vw);
+    font-weight: 500;
+
+    i{
+        margin-right: .5rem;
+    }
+
+    &:hover{
+        background-color: $uni-color-1;
+        color: $uni-color-2;
+    }
+}
+
+
+.sale-off{
+    padding: .5rem .8rem;
+    border-radius: 2rem;
+    background-color: $sale-badge-color;
+    color: $uni-color-2;
+}
+
+.icon-rating{
+    font-size: .7rem;
+    color: $uni-color-1;
+}
+
+.product-carousel-anchor{
+    display: block;
+    color: $uni-color-1;
+    font-size: calc(1rem + .2vw);
+    transition: ease-in-out .5s;
+
+
+    &:hover{
+        color: $sale-badge-color;
     }
 }
