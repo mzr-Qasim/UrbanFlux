@@ -57,6 +57,11 @@ a{
     font-weight: normal;
 }
 
+.main-heading-font-medium{
+    font-size: calc(2rem + .2vw);
+    font-weight: normal;
+}
+
 .theme-button{
     background-color: $uni-color-2;
     color: $uni-color-1;
@@ -148,34 +153,83 @@ a{
 }
 
 
-
-.swiper-button-next:after{
-    margin-right: 3rem;
-    content: "\e907";
-    font-family: 'icomoon';
-    font-size: 1.2rem;
-    text-transform: none !important;
-    letter-spacing: 0;
-    font-variant: initial;
-    line-height: 1;
-    background-color:$uni-color-2;
-    padding: .3rem .5rem;
-    background: $uni-color-2;
-    color: $uni-color-1;
-
+.swiper-buttons{
+    .swiper-button-next:after{
+        margin-right: 3rem;
+        content: "\e907";
+        font-family: 'icomoon';
+        font-size: 1.2rem;
+        text-transform: none !important;
+        letter-spacing: 0;
+        font-variant: initial;
+        line-height: 1;
+        background-color:$uni-color-2;
+        padding: .3rem .5rem;
+        background: $uni-color-2;
+        color: $uni-color-1;
+    
+    }
+    
+    .swiper-button-prev:after{
+        margin-left: 3rem;
+        content: "\e907";
+        rotate: 180deg;
+        font-family: 'icomoon';
+        font-size: 1.2rem;
+        text-transform: none !important;
+        letter-spacing: 0;
+        font-variant: initial;
+        line-height: 1;
+        background-color:$uni-color-2;
+        color: $uni-color-1;
+        padding: .3rem .5rem;
+    }
 }
 
-.swiper-button-prev:after{
-    margin-left: 3rem;
-    content: "\e907";
-    rotate: 180deg;
-    font-family: 'icomoon';
-    font-size: 1.2rem;
-    text-transform: none !important;
-    letter-spacing: 0;
-    font-variant: initial;
-    line-height: 1;
-    background-color:$uni-color-2;
+.best-seller{
+    .swiper-button-next:after{
+        margin-right: 3rem;
+        content: "\e90c";
+        font-family: 'icomoon';
+        font-size: 1rem;
+        text-transform: none !important;
+        letter-spacing: 0;
+        font-variant: initial;
+        line-height: 1;
+        background-color:$uni-color-2;
+        padding: .8rem;
+        background: $uni-color-2;
+        color: $uni-color-1;
+        border-radius: 50%;
+    
+    }
+    
+    .swiper-button-prev:after{
+        margin-left: 3rem;
+        content: "\e90c";
+        rotate: 180deg;
+        font-family: 'icomoon';
+        font-size: 1rem;
+        text-transform: none !important;
+        letter-spacing: 0;
+        font-variant: initial;
+        line-height: 1;
+        background-color:$uni-color-2;
+        color: $uni-color-1;
+        padding: .8rem;
+        border-radius: 50%;
+    }
+}
+
+.product-carousel-position-icons{
+    background-color: $uni-color-2;
     color: $uni-color-1;
-    padding: .3rem .5rem;
+    padding: .5rem .8rem;
+    transition: ease-in-out .5s;
+
+
+    &:hover{
+        background-color: $uni-color-1;
+        color: $uni-color-2;
+    }
 }

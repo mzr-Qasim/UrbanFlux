@@ -179,7 +179,7 @@
 }
 
 .sale-section {
-    margin-bottom: $section-space;
+    margin-bottom: $section-space-large;
 
     .sale-section-inner {
         .sale-section-content{
@@ -221,6 +221,62 @@
 
 }
 
+.best-seller{
+    margin-bottom: $section-space-large;
+
+    .title{
+        margin-bottom: $section-space;
+    }
+    
+
+    .swiper-slide{
+        figure{
+            width: 100%;
+            aspect-ratio: 1/1.4;
+            position: relative;
+            overflow: hidden;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            figcaption{
+
+                .top-icons{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transform: translate(0, 0);
+                    margin: 1rem 0;
+                    transition: ease-in-out .5s;
+                    transform: translateX(-100%);
+
+                    a{
+                        display: block;
+
+                        &:not(:last-child){
+                            margin-bottom: 1rem;
+                        }
+                    }
+                }
+
+            }
+
+            &:hover{
+                figcaption{
+                    .top-icons{
+                        margin: 1rem;
+                        transform: translateX(0);
+                    }
+                }
+            }
+
+            
+        }
+    }
+
+}
 
 
 
