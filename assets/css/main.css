@@ -12595,6 +12595,20 @@ a {
   display: block;
   margin-bottom: 2rem;
 }
+.accessories-galery .swiper-slide figure figcaption a {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+.accessories-galery .swiper-slide figure figcaption a:after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #000000;
+}
 
 .our-store {
   margin-top: 6rem;
