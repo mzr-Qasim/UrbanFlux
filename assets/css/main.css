@@ -12200,41 +12200,40 @@ a {
 .swiper-buttons .swiper-button-next::after {
   content: "\e907";
   font-family: "icomoon";
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   text-transform: none !important;
   letter-spacing: 0;
   font-variant: initial;
   line-height: 1;
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
   padding: 0.3rem 0.5rem;
   transition: ease-in-out 0.5s;
 }
 .swiper-buttons .swiper-button-next:hover::after {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #000000;
+  color: #ffffff;
 }
 .swiper-buttons .swiper-button-prev::after {
   content: "\e907";
   rotate: 180deg;
   font-family: "icomoon";
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   text-transform: none !important;
   letter-spacing: 0;
   font-variant: initial;
   line-height: 1;
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
   padding: 0.3rem 0.5rem;
   transition: ease-in-out 0.5s;
 }
 .swiper-buttons .swiper-button-prev:hover::after {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #000000;
+  color: #ffffff;
 }
 
-.best-seller .swiper-button-next:after {
-  margin-right: 3rem;
+.best-seller .swiper-button-next::after {
   content: "\e90c";
   font-family: "icomoon";
   font-size: 1rem;
@@ -12244,12 +12243,15 @@ a {
   line-height: 1;
   background-color: #ffffff;
   padding: 0.8rem;
-  background: #ffffff;
   color: #000000;
   border-radius: 50%;
+  transition: ease-in-out 0.5s;
 }
-.best-seller .swiper-button-prev:after {
-  margin-left: 3rem;
+.best-seller .swiper-button-next:hover::after {
+  background-color: #000000;
+  color: #ffffff;
+}
+.best-seller .swiper-button-prev::after {
   content: "\e90c";
   rotate: 180deg;
   font-family: "icomoon";
@@ -12262,6 +12264,11 @@ a {
   color: #000000;
   padding: 0.8rem;
   border-radius: 50%;
+  transition: ease-in-out 0.5s;
+}
+.best-seller .swiper-button-prev:hover::after {
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .product-carousel-position-icons {
@@ -12405,7 +12412,7 @@ a {
 .main-hero-section .swiper-buttons-container .swiper-buttons {
   margin-bottom: 5rem;
   position: absolute;
-  width: 150px;
+  width: 120px;
   bottom: 10%;
   right: 0;
   z-index: 40;
