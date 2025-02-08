@@ -12197,33 +12197,40 @@ a {
   opacity: var(--swiper-pagination-bullet-opacity, 1);
 }
 
-.swiper-buttons .swiper-button-next:after {
-  margin-right: 3rem;
+.swiper-buttons .swiper-button-next::after {
   content: "\e907";
   font-family: "icomoon";
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-transform: none !important;
   letter-spacing: 0;
   font-variant: initial;
   line-height: 1;
-  background-color: #ffffff;
+  background-color: #000000;
+  color: #ffffff;
   padding: 0.3rem 0.5rem;
-  background: #ffffff;
+  transition: ease-in-out 0.5s;
+}
+.swiper-buttons .swiper-button-next:hover::after {
+  background-color: #ffffff;
   color: #000000;
 }
-.swiper-buttons .swiper-button-prev:after {
-  margin-left: 3rem;
+.swiper-buttons .swiper-button-prev::after {
   content: "\e907";
   rotate: 180deg;
   font-family: "icomoon";
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-transform: none !important;
   letter-spacing: 0;
   font-variant: initial;
   line-height: 1;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 0.3rem 0.5rem;
+  transition: ease-in-out 0.5s;
+}
+.swiper-buttons .swiper-button-prev:hover::after {
   background-color: #ffffff;
   color: #000000;
-  padding: 0.3rem 0.5rem;
 }
 
 .best-seller .swiper-button-next:after {
@@ -12392,13 +12399,22 @@ a {
   opacity: 0.5;
   z-index: 1;
 }
-.main-hero-section .swiper-buttons {
+.main-hero-section .swiper-buttons-container {
+  position: relative;
+}
+.main-hero-section .swiper-buttons-container .swiper-buttons {
+  margin-bottom: 5rem;
   position: absolute;
   width: 150px;
   bottom: 10%;
   right: 0;
-  transform: translate(0, 0);
   z-index: 40;
+  transform: translate(0, -50%);
+}
+.main-hero-section .swiper-pagination {
+  position: absolute;
+  text-align: left;
+  right: 0;
 }
 
 .categories-section {
