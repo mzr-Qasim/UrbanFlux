@@ -12569,7 +12569,7 @@ a {
 }
 
 .accessories-galery {
-  margin-bottom: 6rem;
+  margin-bottom: 2rem;
 }
 .accessories-galery .swiper-slide a {
   color: #000000;
@@ -12597,6 +12597,7 @@ a {
 }
 
 .our-store {
+  margin-top: 6rem;
   margin-bottom: 6rem;
 }
 .our-store .our-store-inner .title {

@@ -342,7 +342,7 @@
 
 
 .accessories-galery {
-    margin-bottom: $section-space-large;
+    margin-bottom: $section-space;
 
     .swiper-slide {
         a {
@@ -378,6 +378,7 @@
 }
 
 .our-store {
+    margin-top: $section-space-large;
     margin-bottom: $section-space-large;
 
     .our-store-inner {
