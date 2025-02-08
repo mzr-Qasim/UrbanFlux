@@ -29,6 +29,18 @@
             }
         } 
     }
+    // store section
+    .store-tabs-inner{
+        .store-inner{
+            flex-direction: column-reverse;
+            .content-wrapper{
+                width: 100%;
+            }
+            .store-image{
+                width: 100%;
+            }
+        }
+    }
 }
 
 @media(max-width:767px){

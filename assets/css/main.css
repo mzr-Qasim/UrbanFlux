@@ -12120,6 +12120,7 @@ a {
 .main-heading-font-medium {
   font-size: calc(2rem + 0.2vw);
   font-weight: normal;
+  color: #000000;
 }
 
 .theme-button {
@@ -12621,6 +12622,8 @@ a {
   width: 100%;
   padding-bottom: 1rem;
   color: #000000;
+  font-size: calc(1rem + 0.2vw);
+  font-weight: 400;
 }
 .store-tabs ul .nav-item .nav-link::after {
   position: absolute;
@@ -12654,6 +12657,7 @@ a {
 .store-tabs-inner .store-inner .store-image figure {
   width: 100%;
   height: 100%;
+  aspect-ratio: 1/0.8;
 }
 .store-tabs-inner .store-inner .store-image figure img {
   width: 100%;
@@ -12678,6 +12682,15 @@ a {
   }
   .categories-section .center-category:not(:last-child) {
     margin-bottom: 2rem;
+  }
+  .store-tabs-inner .store-inner {
+    flex-direction: column-reverse;
+  }
+  .store-tabs-inner .store-inner .content-wrapper {
+    width: 100%;
+  }
+  .store-tabs-inner .store-inner .store-image {
+    width: 100%;
   }
 }
 @media (max-width: 767px) {
