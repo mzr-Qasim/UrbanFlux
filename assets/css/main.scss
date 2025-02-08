@@ -231,7 +231,6 @@
             aspect-ratio: 1/1.4;
             position: relative;
             overflow: hidden;
-            cursor: pointer;
 
 
             img{
@@ -293,8 +292,21 @@
                 transition: ease-in-out .5s;
                 z-index: 1;
             }
+ 
 
-            &:hover{
+            
+        }
+        .info{
+            margin-top: 1rem;
+
+            small{
+                font-size: calc(.8rem + .2vw);
+                color: $uni-color-1;
+                font-weight: 500;
+            }
+        }
+        &:hover{
+            figure{
                 &::after{
                     transform: translateX(0);
                 }
@@ -310,11 +322,7 @@
                     }
                 }
             }
-
             
-        }
-        .info{
-            margin-top: 1rem;
         }
     }
 

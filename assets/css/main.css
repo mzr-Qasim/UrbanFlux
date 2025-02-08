@@ -12486,7 +12486,6 @@ a {
   aspect-ratio: 1/1.4;
   position: relative;
   overflow: hidden;
-  cursor: pointer;
 }
 .best-seller .swiper-slide figure img {
   width: 100%;
@@ -12540,19 +12539,24 @@ a {
   transition: ease-in-out 0.5s;
   z-index: 1;
 }
-.best-seller .swiper-slide figure:hover::after {
+.best-seller .swiper-slide .info {
+  margin-top: 1rem;
+}
+.best-seller .swiper-slide .info small, .best-seller .swiper-slide .info .small {
+  font-size: calc(0.8rem + 0.2vw);
+  color: #000000;
+  font-weight: 500;
+}
+.best-seller .swiper-slide:hover figure::after {
   transform: translateX(0);
 }
-.best-seller .swiper-slide figure:hover figcaption .top-icons {
+.best-seller .swiper-slide:hover figure figcaption .top-icons {
   margin: 1rem;
   transform: translateX(0);
 }
-.best-seller .swiper-slide figure:hover figcaption .quick-shop {
+.best-seller .swiper-slide:hover figure figcaption .quick-shop {
   margin-left: 1rem;
   transform: translate(0);
-}
-.best-seller .swiper-slide .info {
-  margin-top: 1rem;
 }
 
 @media (max-width: 991px) {
