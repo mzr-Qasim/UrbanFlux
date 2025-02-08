@@ -43,7 +43,10 @@ var swiper2 = new Swiper(".mySwiper2", {
 var swiper3 = new Swiper(".mySwiper3", {
   slidesPerView: 1,
   spaceBetween: 20,
-  
+    autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  }, 
   breakpoints: {
     768: {
       slidesPerView: 2,
