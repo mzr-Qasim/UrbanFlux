@@ -6,6 +6,7 @@
             }
         }
     }
+    // home- main hero section
     .main-hero-section{
         .swiper-slide{
             figure{
@@ -15,6 +16,7 @@
             }
         }
     }
+    // home- categories section
     .categories-section{
         .row [class^="col-"] {
             &:not(:last-child){
@@ -29,7 +31,7 @@
             }
         } 
     }
-    // store section
+    // home- store section
     .store-tabs-inner{
         .store-inner{
             flex-direction: column-reverse;
