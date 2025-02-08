@@ -54,7 +54,7 @@ a{
     display: block;
     font-size: calc(1rem + .2vw);
     font-weight: 300;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem!important;
 }
 
 .main-heading-font{
@@ -285,4 +285,18 @@ a{
     &:hover{
         color: $sale-badge-color;
     }
+}
+
+.store-tabs{
+    .nav-pills {
+        .nav-link.active {
+            color: $uni-color-1!important;
+            background-color: transparent!important;
+            &:after{
+                opacity: 1!important;
+
+            }
+        }
+    }
+
 }
