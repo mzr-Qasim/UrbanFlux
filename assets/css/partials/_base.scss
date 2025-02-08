@@ -2,6 +2,8 @@ $uni-color-1: #000000;
 $uni-color-2: #ffffff;
 
 
+$tertiary-color: #fcfbf9;
+
 $sale-badge-color: #fc5732;
 
 
@@ -289,14 +291,19 @@ a{
 
 .store-tabs{
     .nav-pills {
-        .nav-link.active {
-            color: $uni-color-1!important;
-            background-color: transparent!important;
-            &:after{
-                opacity: 1!important;
+        .nav-item{
+            .nav-link.active {
+                color: $uni-color-1!important;
+                background-color: transparent!important;   
+                &::after{
+                    opacity: 1!important;
 
+            }    
+      
             }
+            
         }
+        
     }
 
 }
