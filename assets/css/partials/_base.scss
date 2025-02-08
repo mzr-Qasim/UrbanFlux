@@ -170,7 +170,7 @@ a{
         &::after{
             content: "\e907";
             font-family: 'icomoon';
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             text-transform: none !important;
             letter-spacing: 0;
             font-variant: initial;
@@ -183,7 +183,7 @@ a{
 
         &:hover{
             &::after{
-                background-color: $uni-color-1;
+                background-color: $secondary-color;
                 color: $uni-color-2;
             }
         }
@@ -198,7 +198,7 @@ a{
         content: "\e907";
         rotate: 180deg;
         font-family: 'icomoon';
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         text-transform: none !important;
         letter-spacing: 0;
         font-variant: initial;
@@ -213,7 +213,7 @@ a{
         &:hover{
 
             &::after{
-                background-color: $uni-color-1;
+                background-color: $secondary-color;
                 color: $uni-color-2;
             }
         }
