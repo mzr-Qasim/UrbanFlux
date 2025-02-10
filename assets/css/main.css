@@ -12468,7 +12468,7 @@ a {
   z-index: 2;
   width: 100%;
   transform: translateY(100%);
-  transition: ease-in-out 1s;
+  transition: ease-in-out 0.8s;
 }
 .main-hero-section .swiper-slide figure figcaption .figcaption-inner {
   color: #ffffff;
