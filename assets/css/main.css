@@ -12817,6 +12817,10 @@ a {
 }
 .footer-inner ul li a {
   color: #000000;
+  transition: ease-in-out 0.5s;
+}
+.footer-inner ul li a:hover {
+  color: #fc5732;
 }
 .footer-inner ul li:not(:last-child) {
   margin-bottom: 1rem;
