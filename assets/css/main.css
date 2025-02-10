@@ -12756,6 +12756,9 @@ a {
   .theme-button {
     padding: 0.8rem 1.2rem;
   }
+  .theme-button-black {
+    padding: 0.8rem 1.2rem;
+  }
   .sale-section .sale-section-inner .col-inner {
     align-items: center;
   }
