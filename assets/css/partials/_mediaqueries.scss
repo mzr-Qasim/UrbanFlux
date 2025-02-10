@@ -46,6 +46,9 @@
 }
 
 @media(max-width:767px){
+    .main-heading-font{
+        font-size: calc(2.5rem + .2vw);
+    }
     .main-hero-font{
         font-size: calc(2.7rem + .2vw)!important;
     }

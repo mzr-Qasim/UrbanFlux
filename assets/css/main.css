@@ -12380,6 +12380,8 @@ a {
 .main-hero-section .swiper-slide figure figcaption {
   z-index: 2;
   width: 100%;
+  transform: translateY(100%);
+  transition: ease-in-out 0.7s;
 }
 .main-hero-section .swiper-slide figure figcaption .figcaption-inner {
   color: #ffffff;
@@ -12405,6 +12407,9 @@ a {
   background-color: #000000;
   opacity: 0.5;
   z-index: 1;
+}
+.main-hero-section .swiper-slide-active figure figcaption {
+  transform: translateY(0);
 }
 .main-hero-section .swiper-buttons-container {
   position: relative;
@@ -12689,6 +12694,16 @@ a {
 .store-tabs-inner .store-inner .content-wrapper .content-inner {
   padding: 5rem 2rem;
 }
+.store-tabs-inner .store-inner .content-wrapper .content-inner h4, .store-tabs-inner .store-inner .content-wrapper .content-inner .h4 {
+  margin-bottom: 3rem;
+}
+.store-tabs-inner .store-inner .content-wrapper .content-inner small, .store-tabs-inner .store-inner .content-wrapper .content-inner .small {
+  display: block;
+}
+.store-tabs-inner .store-inner .content-wrapper .content-inner span.location {
+  display: block;
+  margin-bottom: 2rem;
+}
 .store-tabs-inner .store-inner .store-image {
   width: 50%;
 }
@@ -12732,6 +12747,9 @@ a {
   }
 }
 @media (max-width: 767px) {
+  .main-heading-font {
+    font-size: calc(2.5rem + 0.2vw);
+  }
   .main-hero-font {
     font-size: calc(2.7rem + 0.2vw) !important;
   }
