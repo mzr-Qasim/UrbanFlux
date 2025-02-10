@@ -1,16 +1,22 @@
+@media(max-width: 1200px){
+        .footer-inner{
+        .row [class^="col-"] {
+            padding-bottom: 1rem!important;
+        }    
+    }
+}
 @media(max-width:991px){
+
     .lg-hide{
         display: none;
     }
     .lg-show{
         display: flex!important;
     }
+    .site-logo{
+        width: 150px;
+    }
     .main-navbar{
-        .navbar-brand{
-            img{
-                width: 150px;
-            }
-        }
         .nav-right-links{
             flex-direction: column;
             align-items: start;
@@ -57,6 +63,8 @@
             }
         }
     }
+
+
 }
 
 @media(max-width:767px){

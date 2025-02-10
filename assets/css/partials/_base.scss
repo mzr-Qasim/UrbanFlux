@@ -357,3 +357,22 @@ a{
 
 }
 
+
+.subscribe-button{
+    background-color: $uni-color-1;
+    color: $uni-color-2;
+    padding: .5rem 1rem;
+    display: inline-flex;
+    align-items: center;
+    transition: ease-in-out .5s;
+    font-weight: normal;
+    border: 0;
+    
+
+    &:hover{
+        background-color: $uni-color-2;
+        color: $uni-color-1;
+    }
+}
+
+
