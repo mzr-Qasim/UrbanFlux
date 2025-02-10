@@ -13,7 +13,6 @@ $section-space: 2rem;
 $section-space-large: 6rem;
 
 
-
 body{
     overflow: hidden;
     overflow-y: auto;
@@ -134,6 +133,12 @@ a{
     }
 }
 
+.links-hover{
+    transition: ease-in-out .5s;
+    &:hover{
+        color: $secondary-color;
+    }
+}
 
 
 .link-arrow{
@@ -351,3 +356,4 @@ a{
     }
 
 }
+
