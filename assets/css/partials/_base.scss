@@ -4,6 +4,7 @@ $uni-color-2: #ffffff;
 
 $secondary-color: #fc5732;
 $tertiary-color: #fcfbf9;
+$loading-color: #dcdcdc;
 
 
 
@@ -379,5 +380,12 @@ a{
     }
 }
 
+
+.border-text{
+    padding: .3rem .5rem;
+    border: 1px solid $uni-color-1;
+    color: $uni-color-1;
+    display: inline-block;
+}
 
 

@@ -12352,6 +12352,13 @@ a {
   color: #000000;
 }
 
+.border-text {
+  padding: 0.3rem 0.5rem;
+  border: 1px solid #000000;
+  color: #000000;
+  display: inline-block;
+}
+
 .main-navbar {
   padding: 1rem 0;
   background-color: #ffffff;
@@ -12528,11 +12535,15 @@ a {
 .categories-section .col-inner figure {
   overflow: hidden;
   position: relative;
+  background-color: #dcdcdc;
   width: 100%;
   height: 100%;
   aspect-ratio: 1/0.6;
 }
 .categories-section .col-inner figure img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -12591,8 +12602,13 @@ a {
   width: 100%;
   height: 100%;
   aspect-ratio: 1/1.2;
+  position: relative;
+  background-color: #dcdcdc;
 }
 .sale-section .sale-section-inner .col-inner figure img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
