@@ -225,7 +225,9 @@ a{
     }
 }
 
-.best-seller{
+
+// swiper-default buttons -- start
+.swiper-default{
     .swiper-button-next{
 
         &::after{
@@ -279,6 +281,8 @@ a{
 
     }
 }
+// swiper-default buttons -- end
+
 
 .product-carousel-position-icons{
     background-color: $uni-color-2;
@@ -374,5 +378,6 @@ a{
         color: $uni-color-1;
     }
 }
+
 
 

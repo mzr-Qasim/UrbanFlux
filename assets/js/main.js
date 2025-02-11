@@ -1,9 +1,5 @@
 
-
-
-
-
-
+// Home Page
 
 var swiper = new Swiper(".mySwiper", {
   loop: true,
@@ -60,3 +56,27 @@ var swiper3 = new Swiper(".mySwiper3", {
     },
   },
 });
+
+// Product Detail Page
+
+$(function(){
+  var slider = new Swiper ('.gallery-slider', {
+  
+    slidesPerView: 1,
+    loopedSlides: 6, 
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+  });
+  
+
+  var thumbs = new Swiper ('.gallery-thumbs', {
+    slidesPerView: 3,
+            centeredSlides: true,
+            slideToClickedSlide: true,
+          });
+  
+          slider.controller.control = thumbs;
+          thumbs.controller.control = slider;
+    });

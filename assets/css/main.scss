@@ -2,7 +2,7 @@
 @import './vendors/bs-x5/bootstrap';
 @import './partials/base';
 
-
+// Home Page
 
 .main-navbar {
     padding: 1rem 0;
@@ -637,6 +637,68 @@
     }
 }
 
+
+// Product Detail Page
+
+
+.detail-main-section{
+    .col-inner{
+        .gallery {
+            width: 100%;
+          }
+          
+          .gallery-slider {
+            width: 100%;
+            height: auto;
+            margin: 0 0 10px 0;
+          }
+          
+          .gallery-slider .swiper-slide {
+            width: 100%;
+            height: 500px;
+                    
+          }
+          
+          .gallery-slider .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            object-fit: cover;
+          }
+            
+          .gallery-thumbs {
+            margin-top: 32px;
+            width: 100%;
+            padding: 0;
+            overflow: hidden;
+                
+          }
+          
+          .gallery-thumbs .swiper-slide {
+            width: 200px;
+            height: 100px;
+            text-align: center;
+            overflow: hidden;
+            opacity: 1;
+          }
+                    
+          .gallery-thumbs .swiper-slide-active {
+            opacity: 1;
+            border: 2px solid $uni-color-1;
+          }
+                    
+          .gallery-thumbs .swiper-slide img {
+            width: auto;
+            height: 100%;
+            object-fit: cover;
+          }
+          
+          
+              
+          
+    }
+}
 
 
   
