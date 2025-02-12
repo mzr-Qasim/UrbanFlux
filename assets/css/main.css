@@ -13081,6 +13081,12 @@ a {
   .store-tabs-inner .store-inner .store-image {
     width: 100%;
   }
+  .detail-main-section .gallery-swiper {
+    margin-bottom: 3rem;
+  }
+  .detail-main-section .product-details .row [class^=col-] {
+    padding-bottom: 1rem !important;
+  }
 }
 @media (max-width: 767px) {
   .main-heading-font {

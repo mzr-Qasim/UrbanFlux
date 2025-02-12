@@ -65,10 +65,18 @@
     }
 
     // product-detail page
-    // .detail-main-section{
-  
-
-    // }
+    .detail-main-section{
+    
+        .gallery-swiper{
+            margin-bottom:  3rem;  
+        }
+        .product-details{  
+            .row [class^="col-"] {
+                padding-bottom: 1rem!important;
+            }  
+        }
+    }
+        
 
 
 }
