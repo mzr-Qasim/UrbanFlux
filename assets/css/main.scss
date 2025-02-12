@@ -494,43 +494,6 @@
 .store-tabs {
     margin-bottom: $section-space;
 
-    ul {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-
-        .nav-item {
-            position: relative;
-            width: 30%;
-            display: flex;
-            justify-content: center;
-
-            .nav-link {
-                width: 100%;
-                padding-bottom: 1rem;
-                color: $uni-color-1;
-                font-size: calc(1rem + .2vw);
-                font-weight: 400;
-
-                &::after {
-                    position: absolute;
-                    content: '';
-                    width: 100%;
-                    height: 2px;
-                    bottom: 0;
-                    left: 0;
-                    background-color: $uni-color-1;
-                    opacity: .2;
-
-                }
-
-
-            }
-
-
-        }
-
-    }
 }
 
 .store-tabs-inner{
@@ -657,6 +620,7 @@
 
 
 .detail-main-section{
+    margin-bottom: $section-space-large!important;
     .gallery-swiper{
         .gallery {
             width: 100%;
@@ -709,6 +673,7 @@
             height: 100%;
             object-fit: cover;
           }
+          
             
     }
 }
@@ -727,12 +692,51 @@
             padding: .7rem;
             color: $uni-color-2;
             border-radius: 3px;
+            font-weight: 500;
         }
         .buy-now{
             display: block;
             background-color: $theme-color-red;
         }
+        .shipping-detail{
+            margin-top: 2rem;
+            padding: 1.5rem .5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            height: 100%;
+            i{
+                font-size: calc(2rem + .2vw);
+            }
+            b{
+                font-weight: 500;
+            }
+        }
 
+
+    }
+}
+
+.description-information-tabs{
+    margin-bottom: $section-space-large;
+    .description-information-tabs-inner{
+        padding: 1rem;
+    }
+    .tab-content-inner{
+        display: flex;
+        padding: 1rem 0;
+        flex-direction: column;
+        justify-content: center;
+        .col-inner{
+            padding-bottom: 2rem!important;
+            ul{
+                li{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
 
     }
 }

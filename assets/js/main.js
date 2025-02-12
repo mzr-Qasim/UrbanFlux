@@ -84,7 +84,6 @@ var swiper3 = new Swiper(".mySwiper3", {
 var swiper = new Swiper(".gallery-thumbs", {
   spaceBetween: 10,
   slidesPerView: 4,
-  watchSlidesProgress: true,
 });
 var swiper2 = new Swiper(".gallery-slider", {
   spaceBetween: 10,
