@@ -81,6 +81,8 @@ var swiper3 = new Swiper(".mySwiper3", {
 //     });
 
 
+// Product Detail Swiper
+
 var swiper = new Swiper(".gallery-thumbs", {
   spaceBetween: 10,
   slidesPerView: 4,
@@ -96,3 +98,24 @@ var swiper2 = new Swiper(".gallery-slider", {
   },
 });
 
+
+// Related Products Swiper
+var mySwiper_related_product = new Swiper(".mySwiper_related_products", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+  },
+});
