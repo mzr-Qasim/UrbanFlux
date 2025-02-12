@@ -12373,6 +12373,7 @@ a {
   color: #000000;
   font-weight: normal;
   font-size: calc(1.2rem + 0.2vw);
+  border-radius: 3px;
 }
 .quantity-selector a {
   color: #000000;
@@ -12947,7 +12948,6 @@ a {
 }
 .detail-main-section .gallery-swiper .gallery-thumbs .swiper-slide-active {
   opacity: 1;
-  border: 2px solid #000000;
 }
 .detail-main-section .gallery-swiper .gallery-thumbs .swiper-slide img {
   width: auto;
@@ -12967,6 +12967,7 @@ a {
 .detail-main-section .product-details .theme-button-black {
   padding: 0.7rem;
   color: #ffffff;
+  border-radius: 3px;
 }
 .detail-main-section .product-details .buy-now {
   display: block;

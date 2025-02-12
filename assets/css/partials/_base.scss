@@ -15,6 +15,8 @@ $section-space: 2rem;
 $section-space-large: 6rem;
 
 
+
+
 body{
     overflow: hidden;
     overflow-y: auto;
@@ -403,6 +405,7 @@ a{
     color: $uni-color-1;
     font-weight: normal;
     font-size: calc(1.2rem + .2vw);
+    border-radius: 3px;
 
     a{
         color: $uni-color-1;

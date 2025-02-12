@@ -59,25 +59,41 @@ var swiper3 = new Swiper(".mySwiper3", {
 
 // Product Detail Page
 
-$(function(){
-  var slider = new Swiper ('.gallery-slider', {
+// $(function(){
+//   var slider = new Swiper ('.gallery-slider', {
   
-    slidesPerView: 1,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-  });
+//     slidesPerView: 1,
+//     navigation: {
+//         nextEl: '.swiper-button-next',
+//         prevEl: '.swiper-button-prev',
+//     },
+//   });
   
 
-  var thumbs = new Swiper ('.gallery-thumbs', {
-    slidesPerView: 3,
-            centeredSlides: true,
-            slideToClickedSlide: true,
-          });
+//   var thumbs = new Swiper ('.gallery-thumbs', {
+//     slidesPerView: 3,
+//             centeredSlides: true,
+//             slideToClickedSlide: true,
+//           });
   
-          slider.controller.control = thumbs;
-          thumbs.controller.control = slider;
-    });
+//           slider.controller.control = thumbs;
+//           thumbs.controller.control = slider;
+//     });
 
+
+var swiper = new Swiper(".gallery-thumbs", {
+  spaceBetween: 10,
+  slidesPerView: 3,
+  watchSlidesProgress: true,
+});
+var swiper2 = new Swiper(".gallery-slider", {
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: swiper,
+  },
+});
 

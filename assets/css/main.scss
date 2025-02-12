@@ -701,7 +701,6 @@
                     
           .gallery-thumbs .swiper-slide-active {
             opacity: 1;
-            border: 2px solid $uni-color-1;
           }
                     
           .gallery-thumbs .swiper-slide img {
@@ -726,6 +725,7 @@
         .theme-button-black{
             padding: .7rem;
             color: $uni-color-2;
+            border-radius: 3px;
         }
         .buy-now{
             display: block;
