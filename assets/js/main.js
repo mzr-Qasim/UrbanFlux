@@ -63,7 +63,6 @@ $(function(){
   var slider = new Swiper ('.gallery-slider', {
   
     slidesPerView: 1,
-    loopedSlides: 6, 
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',

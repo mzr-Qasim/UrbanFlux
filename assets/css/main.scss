@@ -657,7 +657,7 @@
 
 
 .detail-main-section{
-    .col-inner{
+    .gallery-swiper{
         .gallery {
             width: 100%;
           }
@@ -709,12 +709,34 @@
             height: 100%;
             object-fit: cover;
           }
-          
-          
-              
-          
+            
     }
 }
+
+.detail-main-section{
+    .product-details{
+        .col-inner{
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        .quantity{
+            margin: 0 1rem;
+        }
+        .theme-button-black{
+            padding: .7rem;
+            color: $uni-color-2;
+        }
+        .buy-now{
+            display: block;
+            background-color: $theme-color-red;
+        }
+
+
+    }
+}
+
+
 
 
 

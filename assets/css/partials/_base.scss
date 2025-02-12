@@ -4,6 +4,7 @@ $uni-color-2: #ffffff;
 
 $secondary-color: #fc5732;
 $tertiary-color: #fcfbf9;
+$theme-color-red: red;
 $loading-color: #dcdcdc;
 
 
@@ -49,6 +50,14 @@ a{
 .align-center{
     display: flex;
     align-items: center;
+}
+
+.text-align-center{
+    text-align: center;
+}
+
+.w_100{
+    width: 100%;
 }
 
 
@@ -386,6 +395,31 @@ a{
     border: 1px solid $uni-color-1;
     color: $uni-color-1;
     display: inline-block;
+}
+
+.quantity-selector{
+    background-color: $loading-color;
+    padding: .5rem;
+    color: $uni-color-1;
+    font-weight: normal;
+    font-size: calc(1.2rem + .2vw);
+
+    a{
+        color: $uni-color-1;
+        width: 25px;
+        height: 25px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: normal;
+        border-radius: 50%;
+        transition: ease-in-out .3s;
+
+        &:hover{
+            color: $uni-color-2;
+            background-color: $uni-color-1;
+        }
+    }
 }
 
 
