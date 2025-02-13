@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?ouc55z');
-  src:  url('fonts/icomoon.eot?ouc55z#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?ouc55z') format('truetype'),
-    url('fonts/icomoon.woff?ouc55z') format('woff'),
-    url('fonts/icomoon.svg?ouc55z#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?5t5s2v');
+  src:  url('fonts/icomoon.eot?5t5s2v#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?5t5s2v') format('truetype'),
+    url('fonts/icomoon.woff?5t5s2v') format('woff'),
+    url('fonts/icomoon.svg?5t5s2v#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -28,54 +28,60 @@
 .icon-cart:before {
   content: "\e900";
 }
-.icon-compare:before {
+.icon-close-icon:before {
   content: "\e901";
 }
-.icon-delievery-icon:before {
+.icon-compare:before {
   content: "\e902";
 }
-.icon-extra-long-arrow:before {
+.icon-delievery-icon:before {
   content: "\e903";
 }
-.icon-facebook:before {
+.icon-extra-long-arrow:before {
   content: "\e904";
 }
-.icon-favourite:before {
+.icon-facebook:before {
   content: "\e905";
 }
-.icon-instagram:before {
+.icon-favourite:before {
   content: "\e906";
 }
-.icon-login:before {
+.icon-filter-icon:before {
   content: "\e907";
 }
-.icon-long-arrow:before {
+.icon-instagram:before {
   content: "\e908";
 }
-.icon-pinterest:before {
+.icon-login:before {
   content: "\e909";
 }
-.icon-quick-view:before {
+.icon-long-arrow:before {
   content: "\e90a";
 }
-.icon-rating:before {
+.icon-pinterest:before {
   content: "\e90b";
 }
-.icon-return-icon:before {
+.icon-quick-view:before {
   content: "\e90c";
 }
-.icon-search:before {
+.icon-rating:before {
   content: "\e90d";
 }
-.icon-small-arrow:before {
+.icon-return-icon:before {
   content: "\e90e";
 }
-.icon-theme-link:before {
+.icon-search:before {
   content: "\e90f";
 }
-.icon-tiktok:before {
+.icon-small-arrow:before {
   content: "\e910";
 }
-.icon-twitter:before {
+.icon-theme-link:before {
   content: "\e911";
+}
+.icon-tiktok:before {
+  content: "\e912";
+}
+.icon-twitter:before {
+  content: "\e913";
 }

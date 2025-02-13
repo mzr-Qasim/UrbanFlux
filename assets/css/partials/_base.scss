@@ -39,6 +39,10 @@ ul{
 a{
     text-decoration: none;
 }
+button{
+    border: 0;
+    background-color: transparent;
+}
 
 
 
@@ -54,6 +58,12 @@ a{
 .align-center{
     display: flex;
     align-items: center;
+}
+
+.align-center-bet{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .text-align-center{
@@ -599,4 +609,112 @@ a{
     }
 }
 
+
+.product-cards{
+    figure {
+        width: 100%;
+        aspect-ratio: 1/1.4;
+        position: relative;
+        overflow: hidden;
+
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        figcaption {
+            .top-icons {
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: translate(0, 0);
+                margin: 1rem 0;
+                transition: ease-in-out .5s;
+                transform: translateX(-100%);
+                z-index: 2;
+
+                a {
+                    display: block;
+
+                    &:not(:last-child) {
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+
+            .quick-shop {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                transform: translate(-50%, 0);
+                margin-bottom: 1rem;
+                transform: translate(-100%);
+                z-index: 2;
+
+            }
+
+            .sale-off {
+                position: absolute;
+                top: 0;
+                right: 0;
+                transform: translate(0, 0);
+                margin: 1rem;
+                z-index: 2;
+
+            }
+
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $uni-color-2;
+            opacity: .5;
+            transform: translateX(-100%);
+            transition: ease-in-out .5s;
+            z-index: 1;
+        }
+
+
+
+    }
+
+    .info {
+        margin-top: 1rem;
+
+        small {
+            font-size: calc(.8rem + .2vw);
+            color: $uni-color-1;
+            font-weight: 500;
+        }
+    }
+
+    &:hover {
+        figure {
+            &::after {
+                transform: translateX(0);
+            }
+
+            figcaption {
+                .top-icons {
+                    margin: 1rem;
+                    transform: translateX(0);
+                }
+
+                .quick-shop {
+                    margin-left: 1rem;
+                    transform: translate(0);
+
+                }
+            }
+        }
+
+    }
+}
 

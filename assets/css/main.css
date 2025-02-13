@@ -22,8 +22,8 @@
 }
 @font-face {
   font-family: "icomoon";
-  src: url("fonts/icomoon.eot?ouc55z");
-  src: url("fonts/icomoon.eot?ouc55z#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?ouc55z") format("truetype"), url("fonts/icomoon.woff?ouc55z") format("woff"), url("fonts/icomoon.svg?ouc55z#icomoon") format("svg");
+  src: url("fonts/icomoon.eot?5t5s2v");
+  src: url("fonts/icomoon.eot?5t5s2v#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?5t5s2v") format("truetype"), url("fonts/icomoon.woff?5t5s2v") format("woff"), url("fonts/icomoon.svg?5t5s2v#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -46,72 +46,80 @@
   content: "\e900";
 }
 
-.icon-compare:before {
+.icon-close-icon:before {
   content: "\e901";
 }
 
-.icon-delievery-icon:before {
+.icon-compare:before {
   content: "\e902";
 }
 
-.icon-extra-long-arrow:before {
+.icon-delievery-icon:before {
   content: "\e903";
 }
 
-.icon-facebook:before {
+.icon-extra-long-arrow:before {
   content: "\e904";
 }
 
-.icon-favourite:before {
+.icon-facebook:before {
   content: "\e905";
 }
 
-.icon-instagram:before {
+.icon-favourite:before {
   content: "\e906";
 }
 
-.icon-login:before {
+.icon-filter-icon:before {
   content: "\e907";
 }
 
-.icon-long-arrow:before {
+.icon-instagram:before {
   content: "\e908";
 }
 
-.icon-pinterest:before {
+.icon-login:before {
   content: "\e909";
 }
 
-.icon-quick-view:before {
+.icon-long-arrow:before {
   content: "\e90a";
 }
 
-.icon-rating:before {
+.icon-pinterest:before {
   content: "\e90b";
 }
 
-.icon-return-icon:before {
+.icon-quick-view:before {
   content: "\e90c";
 }
 
-.icon-search:before {
+.icon-rating:before {
   content: "\e90d";
 }
 
-.icon-small-arrow:before {
+.icon-return-icon:before {
   content: "\e90e";
 }
 
-.icon-theme-link:before {
+.icon-search:before {
   content: "\e90f";
 }
 
-.icon-tiktok:before {
+.icon-small-arrow:before {
   content: "\e910";
 }
 
-.icon-twitter:before {
+.icon-theme-link:before {
   content: "\e911";
+}
+
+.icon-tiktok:before {
+  content: "\e912";
+}
+
+.icon-twitter:before {
+  content: "\e913";
 }
 
 /*!
@@ -12103,6 +12111,11 @@ a {
   text-decoration: none;
 }
 
+button {
+  border: 0;
+  background-color: transparent;
+}
+
 .d_flex {
   display: flex;
 }
@@ -12115,6 +12128,12 @@ a {
 .align-center {
   display: flex;
   align-items: center;
+}
+
+.align-center-bet {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .text-align-center {
@@ -12523,6 +12542,84 @@ a {
 .quantity-selector a:hover {
   color: #ffffff;
   background-color: #000000;
+}
+
+.product-cards figure {
+  width: 100%;
+  aspect-ratio: 1/1.4;
+  position: relative;
+  overflow: hidden;
+}
+.product-cards figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.product-cards figure figcaption .top-icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0, 0);
+  margin: 1rem 0;
+  transition: ease-in-out 0.5s;
+  transform: translateX(-100%);
+  z-index: 2;
+}
+.product-cards figure figcaption .top-icons a {
+  display: block;
+}
+.product-cards figure figcaption .top-icons a:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.product-cards figure figcaption .quick-shop {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(-50%, 0);
+  margin-bottom: 1rem;
+  transform: translate(-100%);
+  z-index: 2;
+}
+.product-cards figure figcaption .sale-off {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(0, 0);
+  margin: 1rem;
+  z-index: 2;
+}
+.product-cards figure::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  opacity: 0.5;
+  transform: translateX(-100%);
+  transition: ease-in-out 0.5s;
+  z-index: 1;
+}
+.product-cards .info {
+  margin-top: 1rem;
+}
+.product-cards .info small, .product-cards .info .small {
+  font-size: calc(0.8rem + 0.2vw);
+  color: #000000;
+  font-weight: 500;
+}
+.product-cards:hover figure::after {
+  transform: translateX(0);
+}
+.product-cards:hover figure figcaption .top-icons {
+  margin: 1rem;
+  transform: translateX(0);
+}
+.product-cards:hover figure figcaption .quick-shop {
+  margin-left: 1rem;
+  transform: translate(0);
 }
 
 .main-navbar {
@@ -13029,12 +13126,88 @@ a {
 .description-information-tabs .tab-content-inner .col-inner {
   padding-bottom: 2rem !important;
 }
+.description-information-tabs .tab-content-inner .col-inner ul {
+  margin-top: 1rem;
+}
 .description-information-tabs .tab-content-inner .col-inner ul li {
   display: flex;
   flex-direction: column;
 }
 .description-information-tabs .tab-content-inner .review-inner a {
   font-size: calc(0.7rem + 0.2vw);
+}
+
+.theme-hero-section {
+  margin-bottom: 2rem;
+}
+.theme-hero-section figure {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.theme-hero-section figure img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+}
+.theme-hero-section figure figcaption {
+  z-index: 2;
+}
+
+.theme-filters-container {
+  margin-bottom: 2rem;
+}
+.theme-filters-container .theme-filter-button {
+  padding: 0.5rem;
+  color: #000000;
+  transition: ease-in-out 0.3s;
+}
+.theme-filters-container .theme-filter-button i {
+  margin-right: 1rem;
+}
+.theme-filters-container .theme-filter-button:hover {
+  border: 1px solid #000000;
+}
+
+section.filters {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  width: 300px;
+  background-color: #ffffff;
+  overflow: hidden;
+  overflow-y: auto;
+  color: #000000;
+  transition: ease-in-out 0.5s;
+  z-index: 100;
+  transform: translateX(-100%);
+}
+section.filters .filter-top {
+  background-color: #fcfbf9;
+  padding: 1rem 2rem;
+}
+section.filters .filter-top ul li .filter-close {
+  margin-right: 1rem;
+}
+section.filters .filter-inner {
+  padding: 1rem 2rem;
+}
+section.filters.open {
+  transform: translateX(0);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+section.filters.closed {
+  transform: translateX(-100%);
+  box-shadow: none;
 }
 
 @media (max-width: 1200px) {
