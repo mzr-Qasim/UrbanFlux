@@ -12149,6 +12149,12 @@ button {
   border-radius: 3px;
 }
 
+.filters-sidebar-heading {
+  display: block;
+  font-size: clamp(1rem, 4vw, 1.2rem);
+  font-weight: normal;
+}
+
 .small-font {
   display: block;
   font-size: calc(1rem + 0.2vw);
@@ -13206,6 +13212,19 @@ section.filters .filter-top ul li .filter-close {
 }
 section.filters .filter-inner {
   padding: 1rem 2rem;
+}
+section.filters .filter-inner .product-categories ul li a {
+  color: #000000;
+  transition: ease-in-out 0.3s;
+}
+section.filters .filter-inner .product-categories ul li a:hover {
+  color: #fc5732;
+}
+section.filters .filter-inner .product-categories ul li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+section.filters .filter-inner .product-categories:not(:last-child) {
+  margin-bottom: 2rem;
 }
 section.filters.open {
   transform: translateX(0);
