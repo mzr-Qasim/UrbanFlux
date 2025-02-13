@@ -12156,13 +12156,19 @@ button {
   margin-bottom: 2rem !important;
 }
 
+.main-hero-font {
+  font-size: clamp(2.5rem, 4vw, 4.5rem);
+  font-weight: normal;
+  margin-bottom: 2rem;
+}
+
 .main-heading-font {
-  font-size: calc(3rem + 0.2vw);
+  font-size: clamp(2.5rem, 4vw, 3rem);
   font-weight: normal;
 }
 
 .main-heading-font-medium {
-  font-size: calc(2rem + 0.2vw);
+  font-size: clamp(1.8rem, 4vw, 2rem);
   font-weight: normal;
   color: #000000;
 }
@@ -12172,7 +12178,7 @@ button {
   color: #000000;
   padding: 1rem 1.5rem;
   transition: ease-in-out 0.5s;
-  font-size: calc(1rem + 0.2vw);
+  font-size: clamp(1rem, 4vw, 1.1rem);
   font-weight: normal;
 }
 .theme-button:hover {
@@ -12253,7 +12259,7 @@ button {
 }
 
 .swiper-buttons .swiper-button-next::after {
-  content: "\e90e";
+  content: "\e910";
   font-family: "icomoon";
   font-size: 1.6rem;
   text-transform: none !important;
@@ -12270,7 +12276,7 @@ button {
   color: #ffffff;
 }
 .swiper-buttons .swiper-button-prev::after {
-  content: "\e90e";
+  content: "\e910";
   rotate: 180deg;
   font-family: "icomoon";
   font-size: 1.6rem;
@@ -12289,7 +12295,7 @@ button {
 }
 
 .swiper-default .swiper-button-next::after {
-  content: "\e90e";
+  content: "\e910";
   font-family: "icomoon";
   font-size: 1rem;
   text-transform: none !important;
@@ -12307,7 +12313,7 @@ button {
   color: #ffffff;
 }
 .swiper-default .swiper-button-prev::after {
-  content: "\e90e";
+  content: "\e910";
   rotate: 180deg;
   font-family: "icomoon";
   font-size: 1rem;
@@ -12744,11 +12750,6 @@ button {
 .main-hero-section .swiper-slide figure figcaption .figcaption-inner {
   color: #ffffff;
 }
-.main-hero-section .swiper-slide figure figcaption .figcaption-inner h2, .main-hero-section .swiper-slide figure figcaption .figcaption-inner .h2 {
-  font-size: calc(4rem + 0.2vw);
-  font-weight: normal;
-  margin-bottom: 2rem;
-}
 .main-hero-section .swiper-slide figure figcaption .figcaption-inner small, .main-hero-section .swiper-slide figure figcaption .figcaption-inner .small {
   display: block;
   font-size: calc(1.2rem + 0.2vw);
@@ -13169,12 +13170,17 @@ button {
   padding: 0.5rem;
   color: #000000;
   transition: ease-in-out 0.3s;
+  font-weight: 500;
 }
 .theme-filters-container .theme-filter-button i {
   margin-right: 1rem;
 }
 .theme-filters-container .theme-filter-button:hover {
   border: 1px solid #000000;
+}
+
+.theme-product-cards .product-cards {
+  margin-bottom: 3rem;
 }
 
 section.filters {
@@ -13262,12 +13268,6 @@ section.filters.closed {
   }
 }
 @media (max-width: 767px) {
-  .main-heading-font {
-    font-size: calc(2.5rem + 0.2vw);
-  }
-  .main-hero-font {
-    font-size: calc(2.7rem + 0.2vw) !important;
-  }
   .theme-button {
     padding: 0.8rem 1.2rem;
   }

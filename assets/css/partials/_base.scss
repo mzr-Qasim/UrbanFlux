@@ -87,13 +87,19 @@ button{
     margin-bottom: 2rem!important;
 }
 
+.main-hero-font {
+    font-size: clamp(2.5rem, 4vw, 4.5rem);
+    font-weight: normal;
+    margin-bottom: 2rem;
+}
+
 .main-heading-font{
-    font-size: calc(3rem + .2vw);
+    font-size: clamp(2.5rem, 4vw, 3rem);
     font-weight: normal;
 }
 
 .main-heading-font-medium{
-    font-size: calc(2rem + .2vw);
+    font-size: clamp(1.8rem, 4vw, 2rem);
     font-weight: normal;
     color: $uni-color-1;
 }
@@ -103,7 +109,7 @@ button{
     color: $uni-color-1;
     padding: 1rem 1.5rem;
     transition: ease-in-out .5s;
-    font-size: calc(1rem + .2vw);
+    font-size: clamp(1rem, 4vw, 1.1rem);
     font-weight: normal;
 
 
@@ -206,7 +212,7 @@ button{
 .swiper-buttons{
     .swiper-button-next{
         &::after{
-            content: "\e90e";
+            content: "\e910";
             font-family: 'icomoon';
             font-size: 1.6rem;
             text-transform: none !important;
@@ -233,7 +239,7 @@ button{
     .swiper-button-prev{
 
         &::after{
-        content: "\e90e";
+        content: "\e910";
         rotate: 180deg;
         font-family: 'icomoon';
         font-size: 1.6rem;
@@ -264,7 +270,7 @@ button{
     .swiper-button-next{
 
         &::after{
-            content: "\e90e";
+            content: "\e910";
             font-family: 'icomoon';
             font-size: 1rem;
             text-transform: none !important;
@@ -290,7 +296,7 @@ button{
     
     .swiper-button-prev{
         &::after{
-            content: "\e90e";
+            content: "\e910";
             rotate: 180deg;
             font-family: 'icomoon';
             font-size: 1rem;

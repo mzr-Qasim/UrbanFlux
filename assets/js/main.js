@@ -126,9 +126,9 @@ var mySwiper_related_product = new Swiper(".mySwiper_related_products", {
 
 
 document.getElementById('filter_close_button').addEventListener('click', function () {
-
   document.getElementById('filters-sidebar').classList.toggle('closed');
 });
+
 document.getElementById('filter_button').addEventListener('click', function () {
   document.getElementById('filters-sidebar').classList.toggle('open');
 });
