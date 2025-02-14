@@ -5,38 +5,583 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
 <body>
-    <div class="login-form-wrapper">
-        <div class="wrapper">
-            <form action="#">
-                <h2 class="login-title">Sign Up</h2>
-                <div class="input-field login-field">
-                    <input type="text" required>
-                    <label>First Name</label>
-                </div>
-                <div class="input-field login-field">
-                    <input type="text" required>
-                    <label>Last Name</label>
-                </div>
-                <div class="input-field login-field">
-                    <input type="text" required>
-                    <label>Email</label>
-                </div>
-                <div class="input-field login-field">
-                    <input type="password" required>
-                    <label>Password</label>
-                </div>
-                <button type="submit" class="submit-button">Create Account</button>
-                <a href="index.html">Back to Home</a>
-                <div class="register">
-                    <p>Already have an account? <a href="./login.html">Login</a></p>
-                </div>
-            </form>
-        </div>
-    </div><!-- /.login-form-wrapper -->
+    <div class="site-wrapper">
+        <header class="header">
+            <nav class="navbar navbar-expand-lg main-navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="./assets/images/logo/main-logo.svg" class="site-logo"
+                            alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./shop.html">Shop</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Categories
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./product-detail.html">About</a>
+                            </li>
+                            <li class="nav-item"><a href="#" class="lg-show nav-link" style="display: none;">Login</a>
+                            </li>
+                            <li class="nav-item"><a href="#" class="lg-show nav-link" style="display: none;">Cart</a>
+                            </li>
+                        </ul>
+                        <ul class="nav-right-links align-center">
+                            <li class="w_full">
+                                <div class="search-box lg-hide">
+                                    <button class="btn-search links-hover"><i class="icon-search"></i></button>
+                                    <input type="text" class="input-search" placeholder="Type to Search...">
+                                </div>
+                            </li>
+                            <li><a href="#" class="links-hover lg-hide"><i class="icon-login"></i></a></li>
+                            <li><a href="#" class="links-hover lg-hide"><i class="icon-favourite"></i></a></li>
+                            <li><a href="#" class="links-hover lg-hide"><i class="icon-cart"></i></a></li>
+                        </ul><!-- /.nav-right-links -->
+                    </div>
+                </div><!-- /.container-fluid -->
+            </nav><!-- /.main-navbar -->
+        </header><!-- /.header -->
+        <main class="main-content">
+            <section class="theme-hero-section">
+                <figure>
+                    <img src="./assets/images/theme-hero-section.jpg" alt="">
+                    <figcaption>
+                        <h4 class="main-heading-font-medium">Men</h4>
+                    </figcaption>
+                </figure>
+            </section><!-- /.theme-hero-section -->
+            <div class="theme-filters-container">
+                <div class="container">
+                    <div class="theme-filters-container-inner align-center-bet">
+                        <button class="align-center theme-filter-button light-border" id="filter_button"><i
+                                class="filter-close icon-filter-icon"></i><small>FILTER</small></button>
+                            <div class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Sort by latest
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Sort by popularity</a></li>
+                                    <li><a class="dropdown-item" href="#">Sort by average rating</a></li>
+                                    <li><a class="dropdown-item" href="#">Sory by latest</a></li>
+                                </ul>
+                            </div><!-- /.nav-item -->
+                            
+                    </div><!-- /.theme-filters-container-inner -->
+                </div><!-- /.container -->
+            </div><!-- /.theme-filters-container -->
+            <section class="theme-product-cards">
+                <div class="container">
+                    <div class="theme-product-cards-inner">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="product-cards">
+                                    <figure>
+                                        <img loading="lazy" src="assets/images/prod-1.jpg" alt="">
+                                        <figcaption>
+                                            <div class="top-icons">
+                                                <a href="#"><i
+                                                        class="icon-favourite product-carousel-position-icons"></i></a>
+                                                <a href="#"><i
+                                                        class="icon-compare product-carousel-position-icons"></i></a>
+                                            </div><!-- /.top-icons -->
+                                            <a href="#" class="product-carousel-shop-button quick-shop"><i
+                                                    class="icon-cart"></i>QUICK
+                                                SHOP</a>
+                                            <span class="sale-off">-36%</span>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="info">
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <a href="#" class="product-carousel-anchor">V-neck linen Shirt</a>
+                                        <small>$18.00</small>
+                                    </div><!-- /.info -->
+                                </div><!-- /.product-cards -->
+                            </div><!-- /.col-xl-3 -->
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="product-cards">
+                                    <figure>
+                                        <img loading="lazy" src="assets/images/prod-1.jpg" alt="">
+                                        <figcaption>
+                                            <div class="top-icons">
+                                                <a href="#"><i
+                                                        class="icon-favourite product-carousel-position-icons"></i></a>
+                                                <a href="#"><i
+                                                        class="icon-compare product-carousel-position-icons"></i></a>
+                                            </div><!-- /.top-icons -->
+                                            <a href="#" class="product-carousel-shop-button quick-shop"><i
+                                                    class="icon-cart"></i>QUICK
+                                                SHOP</a>
+                                            <span class="sale-off">-36%</span>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="info">
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <a href="#" class="product-carousel-anchor">V-neck linen Shirt</a>
+                                        <small>$18.00</small>
+                                    </div><!-- /.info -->
+                                </div><!-- /.product-cards -->
+                            </div><!-- /.col-xl-3 -->
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="product-cards">
+                                    <figure>
+                                        <img loading="lazy" src="assets/images/prod-1.jpg" alt="">
+                                        <figcaption>
+                                            <div class="top-icons">
+                                                <a href="#"><i
+                                                        class="icon-favourite product-carousel-position-icons"></i></a>
+                                                <a href="#"><i
+                                                        class="icon-compare product-carousel-position-icons"></i></a>
+                                            </div><!-- /.top-icons -->
+                                            <a href="#" class="product-carousel-shop-button quick-shop"><i
+                                                    class="icon-cart"></i>QUICK
+                                                SHOP</a>
+                                            <span class="sale-off">-36%</span>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="info">
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <a href="#" class="product-carousel-anchor">V-neck linen Shirt</a>
+                                        <small>$18.00</small>
+                                    </div><!-- /.info -->
+                                </div><!-- /.product-cards -->
+                            </div><!-- /.col-xl-3 -->
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="product-cards">
+                                    <figure>
+                                        <img loading="lazy" src="assets/images/prod-1.jpg" alt="">
+                                        <figcaption>
+                                            <div class="top-icons">
+                                                <a href="#"><i
+                                                        class="icon-favourite product-carousel-position-icons"></i></a>
+                                                <a href="#"><i
+                                                        class="icon-compare product-carousel-position-icons"></i></a>
+                                            </div><!-- /.top-icons -->
+                                            <a href="#" class="product-carousel-shop-button quick-shop"><i
+                                                    class="icon-cart"></i>QUICK
+                                                SHOP</a>
+                                            <span class="sale-off">-36%</span>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="info">
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <a href="#" class="product-carousel-anchor">V-neck linen Shirt</a>
+                                        <small>$18.00</small>
+                                    </div><!-- /.info -->
+                                </div><!-- /.product-cards -->
+                            </div><!-- /.col-xl-3 -->
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="product-cards">
+                                    <figure>
+                                        <img loading="lazy" src="assets/images/prod-1.jpg" alt="">
+                                        <figcaption>
+                                            <div class="top-icons">
+                                                <a href="#"><i
+                                                        class="icon-favourite product-carousel-position-icons"></i></a>
+                                                <a href="#"><i
+                                                        class="icon-compare product-carousel-position-icons"></i></a>
+                                            </div><!-- /.top-icons -->
+                                            <a href="#" class="product-carousel-shop-button quick-shop"><i
+                                                    class="icon-cart"></i>QUICK
+                                                SHOP</a>
+                                            <span class="sale-off">-36%</span>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="info">
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <a href="#" class="product-carousel-anchor">V-neck linen Shirt</a>
+                                        <small>$18.00</small>
+                                    </div><!-- /.info -->
+                                </div><!-- /.product-cards -->
+                            </div><!-- /.col-xl-3 -->
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="product-cards">
+                                    <figure>
+                                        <img loading="lazy" src="assets/images/prod-1.jpg" alt="">
+                                        <figcaption>
+                                            <div class="top-icons">
+                                                <a href="#"><i
+                                                        class="icon-favourite product-carousel-position-icons"></i></a>
+                                                <a href="#"><i
+                                                        class="icon-compare product-carousel-position-icons"></i></a>
+                                            </div><!-- /.top-icons -->
+                                            <a href="#" class="product-carousel-shop-button quick-shop"><i
+                                                    class="icon-cart"></i>QUICK
+                                                SHOP</a>
+                                            <span class="sale-off">-36%</span>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="info">
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <a href="#" class="product-carousel-anchor">V-neck linen Shirt</a>
+                                        <small>$18.00</small>
+                                    </div><!-- /.info -->
+                                </div><!-- /.product-cards -->
+                            </div><!-- /.col-xl-3 -->
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="product-cards">
+                                    <figure>
+                                        <img loading="lazy" src="assets/images/prod-1.jpg" alt="">
+                                        <figcaption>
+                                            <div class="top-icons">
+                                                <a href="#"><i
+                                                        class="icon-favourite product-carousel-position-icons"></i></a>
+                                                <a href="#"><i
+                                                        class="icon-compare product-carousel-position-icons"></i></a>
+                                            </div><!-- /.top-icons -->
+                                            <a href="#" class="product-carousel-shop-button quick-shop"><i
+                                                    class="icon-cart"></i>QUICK
+                                                SHOP</a>
+                                            <span class="sale-off">-36%</span>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="info">
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <a href="#" class="product-carousel-anchor">V-neck linen Shirt</a>
+                                        <small>$18.00</small>
+                                    </div><!-- /.info -->
+                                </div><!-- /.product-cards -->
+                            </div><!-- /.col-xl-3 -->
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="product-cards">
+                                    <figure>
+                                        <img loading="lazy" src="assets/images/prod-1.jpg" alt="">
+                                        <figcaption>
+                                            <div class="top-icons">
+                                                <a href="#"><i
+                                                        class="icon-favourite product-carousel-position-icons"></i></a>
+                                                <a href="#"><i
+                                                        class="icon-compare product-carousel-position-icons"></i></a>
+                                            </div><!-- /.top-icons -->
+                                            <a href="#" class="product-carousel-shop-button quick-shop"><i
+                                                    class="icon-cart"></i>QUICK
+                                                SHOP</a>
+                                            <span class="sale-off">-36%</span>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="info">
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <a href="#" class="product-carousel-anchor">V-neck linen Shirt</a>
+                                        <small>$18.00</small>
+                                    </div><!-- /.info -->
+                                </div><!-- /.product-cards -->
+                            </div><!-- /.col-xl-3 -->
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="product-cards">
+                                    <figure>
+                                        <img loading="lazy" src="assets/images/prod-1.jpg" alt="">
+                                        <figcaption>
+                                            <div class="top-icons">
+                                                <a href="#"><i
+                                                        class="icon-favourite product-carousel-position-icons"></i></a>
+                                                <a href="#"><i
+                                                        class="icon-compare product-carousel-position-icons"></i></a>
+                                            </div><!-- /.top-icons -->
+                                            <a href="#" class="product-carousel-shop-button quick-shop"><i
+                                                    class="icon-cart"></i>QUICK
+                                                SHOP</a>
+                                            <span class="sale-off">-36%</span>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="info">
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <a href="#" class="product-carousel-anchor">V-neck linen Shirt</a>
+                                        <small>$18.00</small>
+                                    </div><!-- /.info -->
+                                </div><!-- /.product-cards -->
+                            </div><!-- /.col-xl-3 -->
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="product-cards">
+                                    <figure>
+                                        <img loading="lazy" src="assets/images/prod-1.jpg" alt="">
+                                        <figcaption>
+                                            <div class="top-icons">
+                                                <a href="#"><i
+                                                        class="icon-favourite product-carousel-position-icons"></i></a>
+                                                <a href="#"><i
+                                                        class="icon-compare product-carousel-position-icons"></i></a>
+                                            </div><!-- /.top-icons -->
+                                            <a href="#" class="product-carousel-shop-button quick-shop"><i
+                                                    class="icon-cart"></i>QUICK
+                                                SHOP</a>
+                                            <span class="sale-off">-36%</span>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="info">
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <a href="#" class="product-carousel-anchor">V-neck linen Shirt</a>
+                                        <small>$18.00</small>
+                                    </div><!-- /.info -->
+                                </div><!-- /.product-cards -->
+                            </div><!-- /.col-xl-3 -->
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="product-cards">
+                                    <figure>
+                                        <img loading="lazy" src="assets/images/prod-1.jpg" alt="">
+                                        <figcaption>
+                                            <div class="top-icons">
+                                                <a href="#"><i
+                                                        class="icon-favourite product-carousel-position-icons"></i></a>
+                                                <a href="#"><i
+                                                        class="icon-compare product-carousel-position-icons"></i></a>
+                                            </div><!-- /.top-icons -->
+                                            <a href="#" class="product-carousel-shop-button quick-shop"><i
+                                                    class="icon-cart"></i>QUICK
+                                                SHOP</a>
+                                            <span class="sale-off">-36%</span>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="info">
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <a href="#" class="product-carousel-anchor">V-neck linen Shirt</a>
+                                        <small>$18.00</small>
+                                    </div><!-- /.info -->
+                                </div><!-- /.product-cards -->
+                            </div><!-- /.col-xl-3 -->
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="product-cards">
+                                    <figure>
+                                        <img loading="lazy" src="assets/images/prod-1.jpg" alt="">
+                                        <figcaption>
+                                            <div class="top-icons">
+                                                <a href="#"><i
+                                                        class="icon-favourite product-carousel-position-icons"></i></a>
+                                                <a href="#"><i
+                                                        class="icon-compare product-carousel-position-icons"></i></a>
+                                            </div><!-- /.top-icons -->
+                                            <a href="#" class="product-carousel-shop-button quick-shop"><i
+                                                    class="icon-cart"></i>QUICK
+                                                SHOP</a>
+                                            <span class="sale-off">-36%</span>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="info">
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <span><i class="icon-rating"></i></span>
+                                        <a href="#" class="product-carousel-anchor">V-neck linen Shirt</a>
+                                        <small>$18.00</small>
+                                    </div><!-- /.info -->
+                                </div><!-- /.product-cards -->
+                            </div><!-- /.col-xl-3 -->
+
+                        </div><!-- /.row -->
+                    </div><!-- /.theme-product-cards-inner -->
+                    <div class="pagination just-center my-5">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            </ul>
+                          </nav>
+                    </div><!-- /.pagination -->
+                </div><!-- /.container -->
+            </section><!-- /.theme-product-cards -->
+        </main><!-- /.main-content -->
+        <footer class="footer"></footer><!-- /.footer -->
+        <section class="filters" id="filters-sidebar">
+            <div class="filter-top">
+                <ul class="align-center-bet">
+                    <li class="align-center"><i class="filter-close icon-filter-icon"></i><small>FILTER</small></li>
+                    <li><button id="filter_close_button"><i class="icon-close-icon"></i></button></li>
+                </ul>
+            </div><!-- /.filter-top -->
+            <div class="filter-inner">
+                <div class="product-categories">
+                    <ul>
+                        <li class="mb-3"><strong class="filters-sidebar-heading ">Product Categories</strong></li>
+                        <!-- <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="Men-filter">
+                                <label class="form-check-label" for="Men-filter">
+                                    Men
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="Women-filter">
+                                <label class="form-check-label" for="Women-filter">
+                                    Women
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="Accessories-filter">
+                                <label class="form-check-label" for="Accessories-filter">
+                                    Accessories
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="Footwear-filter">
+                                <label class="form-check-label" for="Footwear-filter">
+                                    Footwear
+                                </label>
+                            </div>
+                        </li> -->
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="product-availability" id="product-availability1">
+                                <label class="form-check-label" for="product-availability1">
+                                  Men
+                                </label>
+                              </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="product-availability" id="product-availability2" checked>
+                                <label class="form-check-label" for="product-availability2">
+                                  Women
+                                </label>
+                              </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="product-availability" id="product-availability3" checked>
+                                <label class="form-check-label" for="product-availability3">
+                                  Accessories
+                                </label>
+                              </div> 
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="product-availability" id="product-availability4" checked>
+                                <label class="form-check-label" for="product-availability4">
+                                  Footwear
+                                </label>
+                              </div> 
+                        </li>
+                    </ul>
+                </div><!-- /.product-categories -->
+                <hr>
+                <div class="product-categories">
+                    <ul>
+                        <li class="mb-3"><strong class="filters-sidebar-heading ">Availability</strong></li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  On sale
+                                </label>
+                              </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                  In stock
+                                </label>
+                              </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+                                <label class="form-check-label" for="flexRadioDefault3">
+                                  Out of stock
+                                </label>
+                              </div> 
+                        </li>
+                    </ul>
+                </div><!-- /.product-categories -->
+                <hr>
+                <div class="product-categories">
+                    <ul>
+                        <li class="mb-3"><strong class="filters-sidebar-heading ">Price</strong></li>
+                        <li>
+                            <input type="range" class="form-range price-range" id="customRange1">
+                        </li>
+                        <li><small>Price: $2 — $156</small></li>
+                    </ul>
+                </div><!-- /.product-categories -->
+                <hr>
+            </div><!-- /.filter-inner -->
+        </section><!-- /.filters -->
+    </div><!-- /.site-wrapper -->
+    <script src="./assets/libs/swiper.js"></script>
+    <script src="./assets/js/bootstrap.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

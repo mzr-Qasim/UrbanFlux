@@ -7,7 +7,7 @@ $tertiary-color: #fcfbf9;
 $theme-color-red: red;
 $loading-color: #dcdcdc;
 
-
+$light-border-color: #ddd;
 
 
 
@@ -114,6 +114,12 @@ button{
     color: $uni-color-1;
 }
 
+.main-heading-font-small-medium{
+    font-size: clamp(1.4rem, 4vw, 1.6rem);
+    font-weight: normal;
+    color: $uni-color-1;
+}
+
 .theme-button{
     background-color: $uni-color-2;
     color: $uni-color-1;
@@ -163,6 +169,18 @@ button{
 
         }
 
+    }
+}
+
+.theme-underline-button{
+    color: $uni-color-1;
+    font-size: clamp(1rem, 4vw, 1rem);
+    border-bottom: 1px solid $uni-color-1;
+    transition: ease-in-out .3s;
+
+    &:hover{
+        color: $theme-color-red;
+        border-bottom: 1px solid $theme-color-red;
     }
 }
 
