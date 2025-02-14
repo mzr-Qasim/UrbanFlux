@@ -82,9 +82,21 @@
             </section><!-- /.theme-hero-section -->
             <div class="theme-filters-container">
                 <div class="container">
-                    <div class="theme-filters-container-inner">
+                    <div class="theme-filters-container-inner align-center-bet">
                         <button class="align-center theme-filter-button light-border" id="filter_button"><i
                                 class="filter-close icon-filter-icon"></i><small>FILTER</small></button>
+                            <div class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Sort by latest
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Sort by popularity</a></li>
+                                    <li><a class="dropdown-item" href="#">Sort by average rating</a></li>
+                                    <li><a class="dropdown-item" href="#">Sory by latest</a></li>
+                                </ul>
+                            </div><!-- /.nav-item -->
+                            
                     </div><!-- /.theme-filters-container-inner -->
                 </div><!-- /.container -->
             </div><!-- /.theme-filters-container -->
@@ -431,6 +443,17 @@
 
                         </div><!-- /.row -->
                     </div><!-- /.theme-product-cards-inner -->
+                    <div class="pagination just-center my-5">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            </ul>
+                          </nav>
+                    </div><!-- /.pagination -->
                 </div><!-- /.container -->
             </section><!-- /.theme-product-cards -->
         </main><!-- /.main-content -->
@@ -446,10 +469,70 @@
                 <div class="product-categories">
                     <ul>
                         <li class="mb-3"><strong class="filters-sidebar-heading ">Product Categories</strong></li>
-                        <li><a href="">Men</a></li>
-                        <li><a href="">Women</a></li>
-                        <li><a href="">Footwear</a></li>
-                        <li><a href="">Accessories</a></li>
+                        <!-- <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="Men-filter">
+                                <label class="form-check-label" for="Men-filter">
+                                    Men
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="Women-filter">
+                                <label class="form-check-label" for="Women-filter">
+                                    Women
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="Accessories-filter">
+                                <label class="form-check-label" for="Accessories-filter">
+                                    Accessories
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="Footwear-filter">
+                                <label class="form-check-label" for="Footwear-filter">
+                                    Footwear
+                                </label>
+                            </div>
+                        </li> -->
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="product-availability" id="product-availability1">
+                                <label class="form-check-label" for="product-availability1">
+                                  Men
+                                </label>
+                              </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="product-availability" id="product-availability2" checked>
+                                <label class="form-check-label" for="product-availability2">
+                                  Women
+                                </label>
+                              </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="product-availability" id="product-availability3" checked>
+                                <label class="form-check-label" for="product-availability3">
+                                  Accessories
+                                </label>
+                              </div> 
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="product-availability" id="product-availability4" checked>
+                                <label class="form-check-label" for="product-availability4">
+                                  Footwear
+                                </label>
+                              </div> 
+                        </li>
                     </ul>
                 </div><!-- /.product-categories -->
                 <hr>
@@ -458,27 +541,27 @@
                         <li class="mb-3"><strong class="filters-sidebar-heading ">Availability</strong></li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                    On sale
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  On sale
                                 </label>
-                            </div>
+                              </div>
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
-                                <label class="form-check-label" for="flexCheckDefault2">
-                                    In stock
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                  In stock
                                 </label>
-                            </div>
+                              </div>
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
-                                <label class="form-check-label" for="flexCheckDefault3">
-                                    Out of stock
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+                                <label class="form-check-label" for="flexRadioDefault3">
+                                  Out of stock
                                 </label>
-                            </div>
+                              </div> 
                         </li>
                     </ul>
                 </div><!-- /.product-categories -->
@@ -487,7 +570,7 @@
                     <ul>
                         <li class="mb-3"><strong class="filters-sidebar-heading ">Price</strong></li>
                         <li>
-                            <input type="range" class="form-range" id="customRange1">
+                            <input type="range" class="form-range price-range" id="customRange1">
                         </li>
                         <li><small>Price: $2 — $156</small></li>
                     </ul>
