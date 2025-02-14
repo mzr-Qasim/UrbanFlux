@@ -12957,6 +12957,9 @@ button {
   padding: 1rem;
   padding-right: 9rem;
 }
+.footer-inner .news-letter-input input:active {
+  border: 1px solid #000000 !important;
+}
 .footer-inner .news-letter-input .news-letter-subscribe {
   display: block;
   position: absolute;
@@ -13070,6 +13073,13 @@ button {
 }
 .description-information-tabs .tab-content-inner .review-inner a {
   font-size: calc(0.7rem + 0.2vw);
+}
+
+.related-products {
+  margin-bottom: 6rem;
+}
+.related-products .title {
+  margin-bottom: 2rem;
 }
 
 .theme-hero-section {

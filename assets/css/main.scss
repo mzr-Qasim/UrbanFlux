@@ -598,6 +598,9 @@
         input{
             padding: 1rem;
             padding-right: 9rem;
+            &:active{
+                border: 1px solid $uni-color-1!important;
+            }
         }
         .news-letter-subscribe{
             display: block;
@@ -742,6 +745,14 @@
         }
 
 
+    }
+}
+
+.related-products {
+    margin-bottom: $section-space-large;
+
+    .title {
+        margin-bottom: $section-space;
     }
 }
 
