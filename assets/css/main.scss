@@ -49,6 +49,27 @@
             }
         }
 
+        a.wishlist {
+            position: relative;
+
+            span {
+                position: absolute;
+                top: 0;
+                display: inline-block;
+                left: 100%;
+                margin-left: .2rem;
+                background-color: $theme-color-red;
+                color: $uni-color-2;
+                width: 1.2rem;
+                height: 1.2rem;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transform: translate(-50%, -50%);
+            }
+        }
+
         .search-box {
             width: fit-content;
             height: fit-content;
@@ -954,12 +975,15 @@ section.filters {
 
 .login-section {
     margin: 5rem 0;
-    .title{
+
+    .title {
         margin-bottom: 2rem;
     }
-    .col-inner{
+
+    .col-inner {
         margin-bottom: 3rem;
     }
+
     .login-section-main {
         flex-direction: column;
 
@@ -1036,14 +1060,43 @@ section.filters {
         }
 
     }
+
     .login-section-right {
-        .register-button{
+        .register-button {
             font-weight: 500;
         }
     }
-        
+
 }
 
+// Wishlist
+
+section.wishlist-cards {
+    figure {
+        .wishlist-delete-button {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-color: $uni-color-2;
+            color: $uni-color-1;
+            padding: .5rem;
+            transform: translate(-50%, 0);
+            margin-bottom: 1rem;
+            transform: translate(-100%);
+            z-index: 2;
+            transition: ease-in-out .5s;
+
+            &:hover{
+                background-color: $uni-color-1;
+                color: $uni-color-2;
+            }
+
+        }        
+
+    }
+
+
+}
 
 
 
