@@ -13575,7 +13575,6 @@ section.shopping-cart .cart__total__procced .primary-btn {
   }
   section.shopping-cart .shop__cart__table tbody tr .cart__product__item img {
     float: none;
-    margin-right: 0;
   }
 }
 @media (max-width: 767px) {
