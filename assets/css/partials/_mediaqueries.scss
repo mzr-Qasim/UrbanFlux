@@ -107,6 +107,17 @@
     }
 
 
+    section.shopping-cart {
+        .shop__cart__table {
+            overflow-x: auto!important;
+            table {
+                width: 700px;
+            }
+          }
+        }
+
+
+
 
     
 

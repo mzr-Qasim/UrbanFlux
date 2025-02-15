@@ -1196,12 +1196,23 @@ section.shopping-cart {
                         input {
                             color: #444444;
                             width: 84px;
-                            height: 40px;
+                            height: 48px;
+                            float: left;
+                            text-align: center;
+                            border:none;
                         }
     
                         .qtybtn {
-                            font-size: 16px;
-                            color: #444444;
+                            font-size: 2rem;
+                            color: $uni-color-1;
+                            width: 12px;
+                            line-height: 46px;
+                        }
+                        .inc{
+                            float: left;
+                        }
+                        .dec{
+                            float: right;
                         }
                     }
                 }
@@ -1216,18 +1227,23 @@ section.shopping-cart {
                 .cart__close {
                     text-align: right;
     
-                    span {
-                        height: 45px;
-                        width: 45px;
+                    a {
+                        height: 30px;
+                        width: 30px;
                         background: #f2f2f2;
                         border-radius: 50%;
-                        font-size: 18px;
+                        font-size: 1rem;
                         color: $uni-color-1;
-                        line-height: 44px;
+                        line-height: 31px;
                         text-align: center;
                         display: inline-block;
                         font-weight: 600;
                         cursor: pointer;
+                        transition: ease-in-out .3s;
+
+                        &:hover{
+                            color: $theme-color-red;
+                        }
                     }
                 }
             }

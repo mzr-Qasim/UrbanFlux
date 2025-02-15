@@ -12280,15 +12280,6 @@ small, .small {
   color: #ffffff;
 }
 
-.coupon-button {
-  font-size: 14px;
-  border: none;
-  text-transform: uppercase;
-  display: inline-block;
-  padding: 12px 30px;
-  border-radius: 50px;
-}
-
 .links-hover {
   transition: ease-in-out 0.5s;
 }
@@ -13410,11 +13401,22 @@ section.shopping-cart .shop__cart__table tbody tr .cart__quantity .pro-qty {
 section.shopping-cart .shop__cart__table tbody tr .cart__quantity .pro-qty input {
   color: #444444;
   width: 84px;
-  height: 40px;
+  height: 48px;
+  float: left;
+  text-align: center;
+  border: none;
 }
 section.shopping-cart .shop__cart__table tbody tr .cart__quantity .pro-qty .qtybtn {
-  font-size: 16px;
-  color: #444444;
+  font-size: 2rem;
+  color: #000000;
+  width: 12px;
+  line-height: 46px;
+}
+section.shopping-cart .shop__cart__table tbody tr .cart__quantity .pro-qty .inc {
+  float: left;
+}
+section.shopping-cart .shop__cart__table tbody tr .cart__quantity .pro-qty .dec {
+  float: right;
 }
 section.shopping-cart .shop__cart__table tbody tr .cart__total {
   font-size: 16px;
@@ -13425,18 +13427,22 @@ section.shopping-cart .shop__cart__table tbody tr .cart__total {
 section.shopping-cart .shop__cart__table tbody tr .cart__close {
   text-align: right;
 }
-section.shopping-cart .shop__cart__table tbody tr .cart__close span {
-  height: 45px;
-  width: 45px;
+section.shopping-cart .shop__cart__table tbody tr .cart__close a {
+  height: 30px;
+  width: 30px;
   background: #f2f2f2;
   border-radius: 50%;
-  font-size: 18px;
+  font-size: 1rem;
   color: #000000;
-  line-height: 44px;
+  line-height: 31px;
   text-align: center;
   display: inline-block;
   font-weight: 600;
   cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+section.shopping-cart .shop__cart__table tbody tr .cart__close a:hover {
+  color: red;
 }
 section.shopping-cart .cart__btn {
   margin-bottom: 50px;
@@ -13586,5 +13592,11 @@ section.shopping-cart .cart__total__procced .primary-btn {
   }
   .sale-section .sale-section-inner .col-inner {
     align-items: center;
+  }
+  section.shopping-cart .shop__cart__table {
+    overflow-x: auto !important;
+  }
+  section.shopping-cart .shop__cart__table table {
+    width: 700px;
   }
 }/*# sourceMappingURL=main.css.map */
