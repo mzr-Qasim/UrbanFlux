@@ -9,7 +9,8 @@ $loading-color: #dcdcdc;
 
 $light-border-color: #ddd;
 
-
+$heading-color: #000000;
+$primary-color: pink;
 
 $section-space: 2rem;
 $section-space-large: 6rem;
@@ -217,6 +218,17 @@ small{
         color: $uni-color-2;
     }
 }
+
+.coupon-button {
+    font-size: 14px;
+    border: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 50px;
+
+  }
+
 
 .links-hover{
     transition: ease-in-out .5s;
