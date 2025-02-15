@@ -76,6 +76,17 @@
             }  
         }
     }
+        // shopping cart
+    section.shopping-cart {
+        .shop__cart__table {
+            overflow-x: auto!important;
+          }
+        
+          .shop__cart__table tbody tr .cart__product__item img {
+            float: none;
+            margin-right: 0;
+          }
+    }
         
 
 
@@ -96,17 +107,7 @@
         }
     }
 
-    // shopping cart
-    .section.shopping-cart {
-        .shop__cart__table {
-            overflow-x: auto!important;
-          }
-        
-          .shop__cart__table tbody tr .cart__product__item img {
-            float: none;
-            margin-right: 0;
-          }
-    }
+
 
     
 

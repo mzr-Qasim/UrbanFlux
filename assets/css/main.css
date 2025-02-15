@@ -12093,7 +12093,7 @@ textarea.form-control-lg {
   }
 }
 :root {
-  --em-button-eff-bg-color-hover: #ffffff; /* Tomato red, change to your desired color */
+  --em-button-eff-bg-color-hover: #ffffff; /* theme-button black effect */
 }
 
 body {
@@ -13570,6 +13570,13 @@ section.shopping-cart .cart__total__procced .primary-btn {
   .detail-main-section .product-details .row [class^=col-] {
     padding-bottom: 1rem !important;
   }
+  section.shopping-cart .shop__cart__table {
+    overflow-x: auto !important;
+  }
+  section.shopping-cart .shop__cart__table tbody tr .cart__product__item img {
+    float: none;
+    margin-right: 0;
+  }
 }
 @media (max-width: 767px) {
   .theme-button {
@@ -13580,12 +13587,5 @@ section.shopping-cart .cart__total__procced .primary-btn {
   }
   .sale-section .sale-section-inner .col-inner {
     align-items: center;
-  }
-  .section.shopping-cart .shop__cart__table {
-    overflow-x: auto !important;
-  }
-  .section.shopping-cart .shop__cart__table tbody tr .cart__product__item img {
-    float: none;
-    margin-right: 0;
   }
 }/*# sourceMappingURL=main.css.map */
