@@ -12309,7 +12309,7 @@ small, .small {
 }
 
 .swiper-buttons .swiper-button-next::after {
-  content: "\e910";
+  content: "\e911";
   font-family: "icomoon";
   font-size: 1.6rem;
   text-transform: none !important;
@@ -12326,7 +12326,7 @@ small, .small {
   color: #ffffff;
 }
 .swiper-buttons .swiper-button-prev::after {
-  content: "\e910";
+  content: "\e911";
   rotate: 180deg;
   font-family: "icomoon";
   font-size: 1.6rem;
@@ -12345,7 +12345,7 @@ small, .small {
 }
 
 .swiper-default .swiper-button-next::after {
-  content: "\e910";
+  content: "\e911";
   font-family: "icomoon";
   font-size: 1rem;
   text-transform: none !important;
@@ -12363,7 +12363,7 @@ small, .small {
   color: #ffffff;
 }
 .swiper-default .swiper-button-prev::after {
-  content: "\e910";
+  content: "\e911";
   rotate: 180deg;
   font-family: "icomoon";
   font-size: 1rem;
@@ -13217,6 +13217,21 @@ section.filters .filter-inner .product-categories ul li .form-check-input:checke
 }
 section.filters .filter-inner .product-categories ul li:not(:last-child) {
   margin-bottom: 1rem;
+}
+section.filters .filter-inner .product-categories input[type=range].form-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  background: #ffffff;
+  border: 3px solid red;
+  border-radius: 50%;
+  cursor: pointer;
+}
+section.filters .filter-inner .product-categories input[type=range].form-range::-webkit-slider-runnable-track {
+  height: 2px;
+  background: red;
+  border-radius: 5px;
 }
 section.filters .filter-inner .product-categories:not(:last-child) {
   margin-bottom: 2rem;

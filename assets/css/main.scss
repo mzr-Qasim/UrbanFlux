@@ -947,6 +947,26 @@ section.filters {
                 }
             }
 
+
+            input[type="range"].form-range::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 12px;
+                height: 12px;
+                background: $uni-color-2;
+                border: 3px solid $theme-color-red;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+
+            input[type="range"].form-range::-webkit-slider-runnable-track {
+                height: 2px;
+                background: $theme-color-red;
+                border-radius: 5px;
+            }
+
+
             &:not(:last-child) {
                 margin-bottom: 2rem;
             }
@@ -1086,12 +1106,12 @@ section.wishlist-cards {
             z-index: 2;
             transition: ease-in-out .5s;
 
-            &:hover{
+            &:hover {
                 background-color: $uni-color-1;
                 color: $uni-color-2;
             }
 
-        }        
+        }
 
     }
 
