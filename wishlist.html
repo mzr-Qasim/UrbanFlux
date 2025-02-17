@@ -10,67 +10,83 @@
 
 <body>
     <div class="site-wrapper">
-        <header class="header">
+        <div class="search-bar" id="search-top-bar">
+            <div class="container">
+              <div class="search-bar-inner align-center-bet mb-5">
+                <h4>Search our site</h4>
+                <button id="search-bar-close" class="links-hover"><i class="icon-close-icon"></i></button>
+              </div><!-- /.search-bar-inner -->
+              <div class="searchinput">
+                <input type="text" placeholder="Search" class="main-search-bar">
+                <button class="search-submit-btn links-hover" type="submit"><i  class="icon-search"></i></button>
+              </div><!-- /.searchinput -->
+            </div><!-- /.container -->
+          </div><!-- /.search-bar -->
+          <header class="header">
             <nav class="navbar navbar-expand-lg main-navbar">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src="./assets/images/logo/main-logo.svg" class="site-logo"
-                            alt=""></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./shop.html">Shop</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Categories
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">FAQ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./product-detail.html">About</a>
-                            </li>
-                            <li class="nav-item"><a href="#" class="lg-show nav-link" style="display: none;">Login</a>
-                            </li>
-                            <li class="nav-item"><a href="#" class="lg-show nav-link" style="display: none;">Cart</a>
-                            </li>
-                        </ul>
-                        <ul class="nav-right-links align-center">
-                            <li class="w_full">
-                                <div class="search-box lg-hide">
-                                    <button class="btn-search links-hover"><i class="icon-search"></i></button>
-                                    <input type="text" class="input-search" placeholder="Type to Search...">
-                                </div>
-                            </li>
-                            <li><a href="#" class="links-hover lg-hide"><i class="icon-login"></i></a></li>
-                            <li><a href="#" class="links-hover lg-hide"><i class="icon-favourite"></i></a></li>
-                            <li><a href="#" class="links-hover lg-hide"><i class="icon-cart"></i></a></li>
-                        </ul><!-- /.nav-right-links -->
-                    </div>
-                </div><!-- /.container-fluid -->
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./assets/images/logo/main-logo.svg" class="site-logo" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Categories
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./product-detail.html">Contact</a>
+                    </li>
+                  </ul>
+                  <ul class="nav-right-links align-center">
+                      <li>
+                        <button class="lg-hide links-hover" id="search-btn"><i  class="icon-search"></i></button>
+                      </li>
+                    <li><a href="./login.html" class="links-hover lg-hide"><i class="icon-login"></i></a></li>
+                    <li><a href="./wishlist.html" class="links-hover lg-hide count"><i class="icon-favourite"></i><span><small>2</small></span></a></li>
+                    <li><a href="./shopping-cart.html" class="links-hover lg-hide count"><i class="icon-cart"></i><span><small>2</small></span></a></li>
+                  </ul><!-- /.nav-right-links -->
+                </div>
+                <div class="nav-right-links-mobile nav-right-links">
+                <div class="container">
+                  <ul class="align-center-bet" >
+                    <li>
+                      <button class="links-hover" id="search-btn-2"><i  class="icon-search"></i></button>
+                    </li>
+                  <li><a href="./login.html" class="links-hover"><i class="icon-login"></i></a></li>
+                  <li><a href="./wishlist.html" class="links-hover count"><i class="icon-favourite"></i><span><small>2</small></span></a></li>
+                  <li><a href="./shopping-cart.html" class="links-hover count"><i class="icon-cart"></i><span><small>2</small></span></a></li>
+                </ul><!-- /.nav-right-links-mobile -->
+              </div><!-- /.container -->
+                </div><!-- /.nav-right-links-mobile -->
+              </div><!-- /.container-fluid -->
             </nav><!-- /.main-navbar -->
-        </header><!-- /.header -->
+          </header><!-- /.header -->
         <main class="main-content">
             <section class="theme-hero-section">
                 <figure>
