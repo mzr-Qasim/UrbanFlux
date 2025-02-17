@@ -931,6 +931,7 @@
         z-index: 100;
         transform: translateY(-100%);
         transition: ease-in-out .5s;
+
         .searchinput{
             position: relative;
             .main-search-bar{
@@ -952,6 +953,7 @@
 
         &.search-bar-activate{
             transform: translateY(0);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
     }
 

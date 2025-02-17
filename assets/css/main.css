@@ -13234,6 +13234,7 @@ small, .small {
 }
 .search-bar.search-bar-activate {
   transform: translateY(0);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 section.filters {
