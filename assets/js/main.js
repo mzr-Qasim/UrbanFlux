@@ -125,11 +125,20 @@ var mySwiper_related_product = new Swiper(".mySwiper_related_products", {
 
 // Search Bar
 
+
+
 document.getElementById('search-bar-close').addEventListener('click', function () {
   document.getElementById('search-top-bar').classList.toggle('search-bar-activate');
 });
 
 document.getElementById('search-btn').addEventListener('click', function () {
+  document.getElementById('search-top-bar').classList.toggle('search-bar-activate');
+});
+
+
+
+
+document.getElementById('search-btn-2').addEventListener('click', function () {
   document.getElementById('search-top-bar').classList.toggle('search-bar-activate');
 });
 
