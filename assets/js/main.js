@@ -121,16 +121,35 @@ var mySwiper_related_product = new Swiper(".mySwiper_related_products", {
 });
 
 
+
+
+// Search Bar
+
+document.getElementById('search-bar-close').addEventListener('click', function () {
+  document.getElementById('search-top-bar').classList.toggle('search-bar-activate');
+});
+
+document.getElementById('search-btn').addEventListener('click', function () {
+  document.getElementById('search-top-bar').classList.toggle('search-bar-activate');
+});
+
+
+
+
+
+
+
+
+
 // Filter
 
 
+// document.getElementById('filter_close_button').addEventListener('click', function () {
+//   document.getElementById('filters-sidebar').classList.toggle('open');
+// });
 
-document.getElementById('filter_close_button').addEventListener('click', function () {
-  document.getElementById('filters-sidebar').classList.toggle('open');
-});
-
-document.getElementById('filter_button').addEventListener('click', function () {
-  document.getElementById('filters-sidebar').classList.toggle('open');
-});
+// document.getElementById('filter_button').addEventListener('click', function () {
+//   document.getElementById('filters-sidebar').classList.toggle('open');
+// });
 
 

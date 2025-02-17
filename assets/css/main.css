@@ -12726,6 +12726,22 @@ small, .small {
   transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
 }
 
+.nav-right-links-mobile {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transform: translateX(-100%);
+}
+.nav-right-links-mobile ul li:not(:last-child) {
+  margin-right: 2rem;
+}
+
 .main-hero-section {
   margin-bottom: 2rem;
 }
@@ -13186,6 +13202,38 @@ small, .small {
 }
 .theme-product-cards .pagination li a {
   color: #000000;
+}
+
+.search-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 3rem 0;
+  background-color: #ffffff;
+  z-index: 100;
+  transform: translateY(-100%);
+  transition: ease-in-out 0.5s;
+}
+.search-bar .searchinput {
+  position: relative;
+}
+.search-bar .searchinput .main-search-bar {
+  width: 100%;
+  padding: 0.5rem 0;
+  padding-left: 1rem;
+  padding-right: 3rem;
+}
+.search-bar .searchinput .search-submit-btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-right: 1rem;
+  transform: translate(0, -50%);
+  z-index: 100;
+}
+.search-bar.search-bar-activate {
+  transform: translateY(0);
 }
 
 section.filters {
@@ -13732,8 +13780,8 @@ section.checkout .checkout__order__widget label .checkmark:after {
   .lg-hide {
     display: none;
   }
-  .lg-show {
-    display: flex !important;
+  .nav-right-links-mobile {
+    transform: translateX(0);
   }
   .site-logo {
     width: 150px;
