@@ -126,39 +126,41 @@ var mySwiper_related_product = new Swiper(".mySwiper_related_products", {
 // Search Bar
 
 
+document.addEventListener('DOMContentLoaded', function () {
+  // Store references to the elements in variables
+  const searchBarClose = document.getElementById('search-bar-close');
+  const searchBtn = document.getElementById('search-btn');
+  const searchBtn2 = document.getElementById('search-btn-2');
+  const searchTopBar = document.getElementById('search-top-bar');
 
-document.getElementById('search-bar-close').addEventListener('click', function () {
-  document.getElementById('search-top-bar').classList.toggle('search-bar-activate');
+  // Check if elements exist before adding event listeners
+      // Reusable function to toggle the class
+      function toggleSearchBar() {
+          searchTopBar.classList.toggle('search-bar-activate');
+      }
+
+      // Add event listeners using the variables and reusable function
+      searchBarClose.addEventListener('click', toggleSearchBar);
+      searchBtn.addEventListener('click', toggleSearchBar);
+      searchBtn2.addEventListener('click', toggleSearchBar);
+  
 });
-
-document.getElementById('search-btn').addEventListener('click', function () {
-  document.getElementById('search-top-bar').classList.toggle('search-bar-activate');
-});
-
-
-
-
-document.getElementById('search-btn-2').addEventListener('click', function () {
-  document.getElementById('search-top-bar').classList.toggle('search-bar-activate');
-});
-
-
-
-
-
-
 
 
 
 // Filter
 
 
-// document.getElementById('filter_close_button').addEventListener('click', function () {
-//   document.getElementById('filters-sidebar').classList.toggle('open');
-// });
+let filter_close_button = document.getElementById('filter_close_button');
+let filters_sidebar = document.getElementById('filters-sidebar');
+let filter_button = document.getElementById('filter_button');
 
-// document.getElementById('filter_button').addEventListener('click', function () {
-//   document.getElementById('filters-sidebar').classList.toggle('open');
-// });
+filter_close_button.addEventListener('click', function () {
+  filters_sidebar.classList.toggle('open');
+});
+
+filter_button.addEventListener('click', function () {
+  filters_sidebar.classList.toggle('open');
+});
 
 
